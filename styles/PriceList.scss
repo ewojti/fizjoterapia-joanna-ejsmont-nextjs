@@ -1,0 +1,47 @@
+@import "@/styles/variable.module";
+
+.app__modal {
+  .app__modal-content {
+    h1 {
+      margin-bottom: 0.8rem;
+      text-align: center;
+    }
+    ul {
+      list-style-type: none;
+      li {
+        color: $--clr-green;
+        font-size: 1.7rem;
+        margin-bottom: 1rem;
+        display: flex;
+        p {
+          margin-bottom: 1.1rem;
+          margin-left: 1rem;
+          color: $--clr-black;
+          margin-left: 1rem;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          span {
+            font-weight: $--fw-bold;
+            color: $--clr-green;
+            margin-left: 1rem;
+          }
+        }
+      }
+    }
+    .modal-close {
+      margin-top: 1rem;
+      align-self: center;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .app__modal {
+    ul {
+      li {
+        font-size: 2.3rem;
+      }
+    }
+  }
+}

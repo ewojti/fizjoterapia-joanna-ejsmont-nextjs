@@ -1,0 +1,82 @@
+@import "@/styles/variable.module";
+
+.app__contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  color: $--clr-light;
+  background-color: $--clr-black;
+  .app__contact-map {
+    max-width: 600px;
+    width: 100%;
+    iframe {
+      width: 100%;
+      height: 500px;
+      border: none;
+      align-self: center;
+    }
+  }
+  .app__contact-info {
+    max-width: 600px;
+    width: 100%;
+    h1 {
+      border-bottom: 1px solid;
+      border-image: linear-gradient(to left, #676767, #d3d4d4) 1;
+      margin-bottom: 4rem;
+    }
+    .app__contact-info-items {
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+      .app__contact-info-item {
+        display: flex;
+        height: 32px;
+        span {
+          margin-right: 0.7rem;
+          height: 2rem;
+        }
+        p {
+          align-self: center;
+          color: $--clr-grey;
+          font-size: 1.7rem;
+          line-height: 2.3rem;
+          span {
+            font-size: 1.2rem;
+          }
+        }
+        &:nth-child(2):hover {
+          p:hover {
+            font-size: 2.2rem;
+            border-bottom: 2px solid $--clr-grey;
+            cursor: pointer;
+          }
+        }
+        &:last-child {
+          p {
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .app__contact {
+    flex-direction: row;
+    align-items: unset;
+    justify-content: center;
+    .app__contact-info {
+      .app__contact-info-items {
+        .app__contact-info-item {
+          &:last-child {
+            p {
+              font-size: $--fs-body;
+            }
+          }
+        }
+      }
+    }
+  }
+}

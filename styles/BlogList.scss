@@ -1,0 +1,14 @@
+@import "@/styles/variable.module";
+
+.app__blogList {
+  .app__blogList-items {
+    gap: 3rem;
+    .app__blogList-item {
+      margin-bottom: 4rem;
+      cursor: pointer;
+      &:hover {
+        color: $--clr-green;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@import "@/styles/variable.module";
+
+.app__navigateBtn {
+  margin-bottom: 2rem;
+      background-image: linear-gradient(to left, #d3d4d4, $--clr-grey);
+}
+
+@media screen and (min-width: 1024px) {
+  .app__navigateBtn{
+    position: fixed;
+    top: 40px;
+    left: 40px;
+  }  
+}

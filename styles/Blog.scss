@@ -1,0 +1,158 @@
+@import "@/styles/variable.module";
+
+.app__blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .app__blog-title {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+    border-image: linear-gradient(to right, #676767, #d3d4d4) 1;
+    margin-bottom: 2rem;
+    h1 {
+      margin-bottom: 0.6rem;
+    }
+    .app__blog-title-last-posts {
+      align-self: flex-end;
+      display: none;
+    }
+  }
+  .app__blog-posts {
+    display: flex;
+    margin: 1.5rem 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    align-items: stretch;
+    .app__blog-post {
+      text-align: justify;
+      max-width: 340px;
+      width: 100%;
+      height: 400px;
+      border-radius: 2rem;
+      display: flex;
+      flex-direction: column;
+      cursor: default;
+      .app__blog-post-head {
+        padding: 1rem 1.5rem;
+        width: 100%;
+        height: 50%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        .overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: $--clr-green;
+          opacity: 0.8;
+          border-radius: 2rem 2rem 0 2rem;
+          &::before,
+          &::after {
+            content: "";
+            position: absolute;
+            height: 40px;
+            width: 40px;
+            background-color: $--clr-green;
+            right: 0;
+            bottom: -40px;
+          }
+          &::after {
+            border-radius: 0 2rem 0 0;
+            background-color: $--clr-light;
+          }
+        }
+        .app__blog-post-title {
+          z-index: 1;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          h3 {
+            font-weight: $--fw-semiBold;
+            text-align: center;
+            align-self: center;
+            color: $--clr-light;
+            font-size: $--fs-h2;
+            line-height: 3rem;
+          }
+        }
+        .app__blog-post-date {
+          align-self: flex-end;
+          color: $--clr-light;
+          font-weight: $--fw-bold;
+          z-index: 1;
+        }
+      }
+      .app__blog-post-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 2.1rem 1.5rem 0.5rem 1.5rem;
+        height: 50%;
+        .app__blog-post-btn {
+          align-self: flex-end;
+          margin-bottom: 1rem;
+          font-size: $--fs-body;
+          cursor: pointer;
+          border-bottom: 2px solid $--clr-green;
+          &:hover {
+            border-bottom: 5px solid $--clr-green;
+          }
+        }
+      }
+    }
+  }
+  .app__blog-button-link{    
+    align-self: center;
+    .app__blog-button {
+      max-width: 340px;
+      width: 100%;
+      padding: 1rem 2rem;
+      height: 60px;
+      align-self: center;
+      background-color: $--clr-light;
+      color: $--clr-black;
+      font-size: $--fs-h3;
+      font-weight: $--fw-bold;
+      font-family: $--ff-cormorant;
+      margin-top: 1.2rem;
+      cursor: pointer;
+      font-weight: $--fw-regular;
+      border: none;
+      border-radius: 2rem;
+      &:hover {
+        background-color: $--clr-green;
+        color: $--clr-light;
+      }
+    }
+  }
+    
+  .app__blog-button,
+  .app__blog-post {
+    -webkit-box-shadow: 2px 2px 2px 2px rgba(159, 159, 159, 1);
+    -moz-box-shadow: 2px 2px 2px 2px rgba(159, 159, 159, 1);
+    box-shadow: 2px 2px 2px 2px rgba(159, 159, 159, 1);
+  }
+  .app__blog-button:hover,
+  .app__blog-post:hover {
+    transform: scale(1.02) !important;
+    transition-duration: 0.3s;
+    -webkit-box-shadow: 12px 13px 2px -2px rgba(159, 159, 159, 1);
+    -moz-box-shadow: 12px 13px 2px -2px rgba(159, 159, 159, 1);
+    box-shadow: 12px 13px 2px -2px rgba(159, 159, 159, 1);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .app__blog {
+    .app__blog-title {
+      .app__blog-title-last-posts {
+        align-self: flex-end;
+        display: block;
+      }
+    }
+  }
+}

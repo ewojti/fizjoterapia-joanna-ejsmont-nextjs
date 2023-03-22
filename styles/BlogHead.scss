@@ -1,0 +1,52 @@
+@import "@/styles/variable.module";
+
+.app__blogHead {
+  display: flex;
+  flex-direction: column;
+  .app__bloglist-title {
+    display: flex;
+    margin-bottom: 2rem;
+    .app__bloglist-title-logo {
+      align-self: center;
+      img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+    .horizontal-line {
+      margin: 0 1.5rem;
+      border: 0;
+      width: 2px;
+      background: $--clr-black;
+      background-image: linear-gradient(to top, #d3d4d4, #676767);
+    }
+  }
+  .app__blogList-author {
+    display: flex;
+    margin-bottom: 3rem;
+    .app__blogList-author-img {
+      img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+    .app__blogList-author-name {
+      display: flex;
+      flex-direction: column;
+      font-family: $--ff-lato;
+      margin-left: 1rem;
+      align-self: center;
+      letter-spacing: 0.08rem;
+      h2 {
+        font-size: $--fs-h3;
+        font-weight: $--fw-semiBold;
+      }
+      p {
+        font-size: 0.9rem;
+        font-weight: $--fw-light;
+      }
+    }
+  }
+}
