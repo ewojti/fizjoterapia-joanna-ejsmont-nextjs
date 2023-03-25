@@ -4,33 +4,37 @@ const services = [
     title: "Fizjoterapia uroginekologiczna",
     icon: `../../public/assets/mother/.png`,
     types: [
-      "ocena mięśni dna miednicy po porodzie",
-      "ciąża i przygotowanie do porodu",
+      "dolegliwości bólowe w ciąży",
+      "przygotowanie do porodu",
       "terapia blizn",
-      "trening medyczny w rozejściu mięśni brzycha oraz mięśni dna miednicy",
+      "trening medyczny w rozejściu mięśni brzucha",
     ],
   },
   {
     id: 2,
     title: "Fizjoterapia neurologiczna",
     types: [
-      "rehabilitacja pacjentów z chorobami nerwowo-mięśniowymi i neurologicznych takich jak: udary mózgu, stwardnienie rozsiane",
+      "rehabilitacja pacjentów z chorobami nerwowo-mięśniowymi i neurologicznymi t.j.: udar mózgu, stwardnienie rozsiane",
       "bóle głowy",
+      'trening chodu, równowagi i koordynacji oraz zapobieganie upadkom'
     ],
   },
   {
     id: 3,
     title: "Fizjoterapia ortopedyczna",
     types: [
-      "problemy bólowe kręgosłupa i stawów obwodowych",
-      "urazy i zwyrodnienia stawów",
-      "funkcjonalny trening medyczny dostosowany do konkretnej dyscypliny sportowej",
+      "dolegliwości bólowe kręgosłupa i stawów obwodowych",
+      "stan po urazach narządu ruchu",
+      "funkcjonalny trening medyczny",
     ],
   },
   {
     id: 4,
     title: "Fizjoterapia dzieci",
-    types: ["badanie i terapia stóp m.in. stóp płasko-koślawych", "wady postawy u dzieci od 4 lat"],
+    types: [
+      "badanie i terapia stóp m.in. stóp płasko-koślawych",
+      "wady postawy u dzieci od 4 roku życia",
+    ],
   },
 ];
 

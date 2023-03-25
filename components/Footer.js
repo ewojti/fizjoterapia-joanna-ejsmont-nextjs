@@ -9,7 +9,7 @@ const Footer = () => {
           Copyright © 2023 <br />
           Fizjoterapia Joanna Ejsmont
         </div>
-        <div className="policy__link">
+        {/* <div className="policy__link">
           Icons made by
           <a href="https://www.freepik.com" title="Freepik">
             Freepik
@@ -18,7 +18,7 @@ const Footer = () => {
           <a href="https://www.flaticon.com/" title="Flaticon">
             www.flaticon.com
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   );

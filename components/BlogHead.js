@@ -6,22 +6,22 @@ import images from "@/constants/images";
 const BlogHead = () => {
   return (
     <div className="app__blogHead">
-      <div className="app__bloglist-title">
-        <div className="app__bloglist-title-logo">
+      <div className="app__blogHead-title">
+        <div className="app__blogHead-title-logo">
           <Link href="/">
             <Image src={images.logo_footer} alt=""></Image>
           </Link>
         </div>
         <hr className="horizontal-line"></hr>
-        <Link href='/blog-list'>
+        <Link href='/blog'>
           <h1 className="app__heading-h1">BLOG</h1>
         </Link>
       </div>
-      <div className="app__blogList-author">
-        <div className="app__blogList-author-img">
+      <div className="app__blogHead-author">
+        <div className="app__blogHead-author-img">
           <Image src={images.blog} alt="" />
         </div>
-        <div className="app__blogList-author-name">
+        <div className="app__blogHead-author-name">
           <h2>Joanna Ejsmont</h2>
           <p>
             Magister Fizjoterapii

@@ -1,0 +1,8 @@
+@import "@/styles/variable.module";
+
+.app__aboutMeModal {
+  .app__aboutMeModal-courses {
+    font-size: $--fs-body;
+    color: $--clr-black;
+  }
+}

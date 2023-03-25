@@ -7,7 +7,7 @@ import Header from "@/components/Header";
 import AboutMe from "@/components/AboutMe";
 import Abilities from "@/components/Abilities";
 import Separator from "@/components/Separator";
-import Blog from "@/components/Blog";
+import Blog from "@/components/BlogRecent";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import "@/styles/variable.module.scss";

@@ -25,7 +25,7 @@ const priceData = [
   },
   {
     id: 5,
-    name: "Tapping",
+    name: "Taping",
     cost: "- 20 zł",
     time: '- 10min'
   },

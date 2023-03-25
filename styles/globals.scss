@@ -44,16 +44,10 @@ a {
   max-width: 800px;
   width: 100%;
   border: 1px solid;
-  border-image: linear-gradient(to right, #676767, #d3d4d4) 1;
+  border-image: linear-gradient(to right, $--clr-grey, $--clr-light) 1;
 }
 
 .app__bg-separator {
-  // background-image: url("../../public/assets/headerMob.jpg");
-  // opacity: 0.5;
-  // background-size: cover;
-  // background-repeat: no-repeat;
-  // background-attachment: fixed;
-  // background-position: top 90px right;
   .app__bg-separator-img-desktop {
     display: none;
   }
@@ -157,6 +151,10 @@ a {
   max-width: 360px;
   width: 100%;
   height: auto;
+  ul{
+    font-size: $--fs-body;
+    color: $--clr-grey;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -197,11 +195,11 @@ a {
   cursor: pointer;
 }
 
-.policy__link {
-  font-size: 0.6rem;
-  color: $--clr-grey;
-  gap: 0.2rem;
-}
+// .policy__link {
+//   font-size: 0.6rem;
+//   color: $--clr-grey;
+//   gap: 0.2rem;
+// }
 
 @mixin gradient($color_first, $color_second) {
   background: -webkit-radial-gradient($color_first, $color_second);

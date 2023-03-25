@@ -14,9 +14,16 @@ const Navbar = () => {
     setActive(!isActive);
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <nav className="app__navbar fixed-top">
-      <div className="app__navbar-logo">
+      <div className="app__navbar-logo" onClick={scrollToTop} >
         <Link className="app__navbar-logo-link"
         href='/'>
           <Image

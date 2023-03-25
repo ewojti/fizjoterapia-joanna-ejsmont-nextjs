@@ -11,18 +11,18 @@ const BlogPost = ({ post }) => {
     <div className="app__blogPage section__padding">
       <NavigateBtn />
       <BlogHead />
-      <Image
-        className="app__blogPage-post-img"
-        loader={() => post.featuredImage.url}
-        src={post.featuredImage.url}
-        alt=""
-        width={1000}
-        height={400}
-      />
+      <div className="app__blogPage-post-img">
+        <Image
+          loader={() => post.featuredImage.url}
+          src={post.featuredImage.url}
+          alt=""
+          fill
+        />
+      </div>
       <h1 className="app__heading-h1-blog">{post.title}</h1>
       <h3 className="app__heading-h3-blog">{post.date}</h3>
       <h2 className="app__heading-h2-blog">{post.excerpt}</h2>
-      {/* <p>{post.content}</p> */}
+      <Content post={post} />
     </div>
   );
 };

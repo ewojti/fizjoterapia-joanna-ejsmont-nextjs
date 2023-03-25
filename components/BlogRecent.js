@@ -1,9 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import { nanoid } from "nanoid";
-import { getPosts } from "@/services";
 
-const Blog = ({ posts }) => {
+const BlogRecent = ({ posts }) => {
   return (
     <div id="blog" className="app__blog section__padding">
       <div className="app__blog-title">
@@ -27,7 +26,7 @@ const Blog = ({ posts }) => {
             <div className="app__blog-post-text">
               <p>{post.node.excerpt}</p>
               <Link
-                href={`/blog-list/${post.node.slug}`}
+                href={`/blog/${post.node.slug}`}
                 className="app__blog-post-btn"
               >
                 Czytaj cały post
@@ -36,7 +35,7 @@ const Blog = ({ posts }) => {
           </div>
         ))}
       </div>
-      <Link href="/blog-list" className="app__blog-button-link">
+      <Link href="/blog" className="app__blog-button-link">
         <button className="app__blog-button p__cormorant">
           Odwiedź blog
         </button>
@@ -45,5 +44,5 @@ const Blog = ({ posts }) => {
   );
 };
 
-export default Blog;
+export default BlogRecent;
 

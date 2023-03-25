@@ -21,18 +21,11 @@ const Header = () => {
         >
           Twój gabinet fizjoterapii w <span>Sokółce</span>
         </h1>
-        <h3
-          className="app__heading-h3"
-          data-aos="fade-in"
-          data-aos-delay="2000"
-        >
-          Tu pozbędziesz się bólu i odzyskasz sprawność
-        </h3>
         <div className="app__header-contact">
           <div
             className="app__header-info-item"
-            data-aos="fade-in"
-            data-aos-delay="2500"
+            data-aos="fade-right"
+            data-aos-delay="1500"
           >
             <span className="app__react-icons">
               <ImLocation2 />
@@ -41,8 +34,8 @@ const Header = () => {
           </div>
           <div
             className="app__header-info-item"
-            data-aos="fade-in"
-            data-aos-delay="2500"
+            data-aos="fade-right"
+            data-aos-delay="1800"
           >
             <span className="app__react-icons">
               <HiPhone />
@@ -54,7 +47,7 @@ const Header = () => {
           <button
             className="custom__button"
             data-aos="fade-up"
-            data-aos-delay="1200"
+            data-aos-delay="2000"
           >
             <a href="tel:793183080">Umów wizytę</a>
           </button>

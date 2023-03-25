@@ -4,6 +4,7 @@ import "@/styles/AboutMe.scss";
 import "@/styles/Blog.scss";
 import "@/styles/BlogHead.scss";
 import "@/styles/Contact.scss";
+import "@/styles/Content.scss";
 import "@/styles/Footer.scss";
 import "@/styles/Header.scss";
 import "@/styles/Navbar.scss";

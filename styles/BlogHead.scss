@@ -3,10 +3,10 @@
 .app__blogHead {
   display: flex;
   flex-direction: column;
-  .app__bloglist-title {
+  .app__blogHead-title {
     display: flex;
     margin-bottom: 2rem;
-    .app__bloglist-title-logo {
+    .app__blogHead-title-logo {
       align-self: center;
       img {
         width: 50px;
@@ -21,10 +21,10 @@
       background-image: linear-gradient(to top, #d3d4d4, #676767);
     }
   }
-  .app__blogList-author {
+  .app__blogHead-author {
     display: flex;
     margin-bottom: 3rem;
-    .app__blogList-author-img {
+    .app__blogHead-author-img {
       img {
         width: 70px;
         height: 70px;
@@ -32,7 +32,7 @@
         object-fit: cover;
       }
     }
-    .app__blogList-author-name {
+    .app__blogHead-author-name {
       display: flex;
       flex-direction: column;
       font-family: $--ff-lato;
