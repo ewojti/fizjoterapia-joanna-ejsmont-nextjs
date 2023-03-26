@@ -1,15 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import BlogHead from "@/components/BlogHead";
 import Link from "next/link";
 import NavigateBtn from "@/components/NavigateBtn";
 import { getPosts } from "@/services";
+import "aos/dist/aos.css";
+import Aos from "aos";
 
-const BlogList = ({posts}) => {
+const BlogList = ({ posts }) => {
+  useEffect(() => {
+    Aos.init({});
+  }, []);
   return (
     <div className="app__blogList app__blogPage section__padding" id="bloglist">
       <NavigateBtn />
       <BlogHead />
-      <div className="app__blogList-items">
+      <div
+        className="app__blogList-items"
+      >
         {posts.map((post) => (
           <div className="app__blogList-item" key={post.node.title}>
             <Link href={`/blog/${post.node.slug}`}>

@@ -18,7 +18,7 @@ const PriceList = () => {
       <button
         className="custom__button"
         data-aos="fade-up"
-        data-aos-delay="2200"
+        data-aos-delay="1300"
         onClick={toggleModal}
       >
         Sprawdź cennik
@@ -28,7 +28,7 @@ const PriceList = () => {
           <div onClick={toggleModal} className="modal-overlay"></div>
           <div className="app__modal-content">
             <h1 className="app__heading-h1">Cennik:</h1>
-            <ul className="app__pricelist-items p__cormorant">
+            <ul className="p__cormorant">
               {priceData.map((price) => (
                 <li key={price.id.toString()}>
                   <p>

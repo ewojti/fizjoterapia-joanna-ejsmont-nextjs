@@ -1,7 +1,7 @@
 import '@/styles/globals.scss'
 import "@/styles/Abilities.scss";
 import "@/styles/AboutMe.scss";
-import "@/styles/Blog.scss";
+import "@/styles/BlogRecent.scss";
 import "@/styles/BlogHead.scss";
 import "@/styles/Contact.scss";
 import "@/styles/Content.scss";

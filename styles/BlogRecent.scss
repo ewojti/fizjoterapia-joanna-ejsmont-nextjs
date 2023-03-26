@@ -1,10 +1,10 @@
 @import "@/styles/variable.module";
 
-.app__blog {
+.app__blogRecent {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  .app__blog-title {
+  .app__blogRecent-title {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid;
@@ -13,19 +13,19 @@
     h1 {
       margin-bottom: 0.6rem;
     }
-    .app__blog-title-last-posts {
+    .app__blogRecent-title-last-posts {
       align-self: flex-end;
       display: none;
     }
   }
-  .app__blog-posts {
+  .app__blogRecent-posts {
     display: flex;
     margin: 1.5rem 0;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 2rem;
     align-items: stretch;
-    .app__blog-post {
+    .app__blogRecent-post {
       text-align: justify;
       max-width: 340px;
       width: 100%;
@@ -34,7 +34,7 @@
       display: flex;
       flex-direction: column;
       cursor: default;
-      .app__blog-post-head {
+      .app__blogRecent-post-head {
         padding: 1rem 1.5rem;
         width: 100%;
         height: 50%;
@@ -65,7 +65,7 @@
             background-color: $--clr-light;
           }
         }
-        .app__blog-post-title {
+        .app__blogRecent-post-title {
           z-index: 1;
           height: 100%;
           display: flex;
@@ -79,20 +79,20 @@
             line-height: 3rem;
           }
         }
-        .app__blog-post-date {
+        .app__blogRecent-post-date {
           align-self: flex-end;
           color: $--clr-light;
           font-weight: $--fw-bold;
           z-index: 1;
         }
       }
-      .app__blog-post-text {
+      .app__blogRecent-post-text {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         padding: 2.1rem 1.5rem 0.5rem 1.5rem;
         height: 50%;
-        .app__blog-post-btn {
+        .app__blogRecent-post-btn {
           align-self: flex-end;
           margin-bottom: 1rem;
           font-size: $--fs-body;
@@ -105,9 +105,11 @@
       }
     }
   }
-  .app__blog-button-link{    
+  .app__blogRecent-button-link{    
     align-self: center;
-    .app__blog-button {
+    max-width: 340px;
+    width: 100%;
+    .app__blogRecent-button {
       max-width: 340px;
       width: 100%;
       padding: 1rem 2rem;
@@ -130,14 +132,14 @@
     }
   }
     
-  .app__blog-button,
-  .app__blog-post {
+  .app__blogRecent-button,
+  .app__blogRecent-post {
     -webkit-box-shadow: 2px 2px 2px 2px rgba(159, 159, 159, 1);
     -moz-box-shadow: 2px 2px 2px 2px rgba(159, 159, 159, 1);
     box-shadow: 2px 2px 2px 2px rgba(159, 159, 159, 1);
   }
-  .app__blog-button:hover,
-  .app__blog-post:hover {
+  .app__blogRecent-button:hover,
+  .app__blogRecent-post:hover {
     transform: scale(1.02) !important;
     transition-duration: 0.3s;
     -webkit-box-shadow: 12px 13px 2px -2px rgba(159, 159, 159, 1);
@@ -147,9 +149,9 @@
 }
 
 @media screen and (min-width: 768px) {
-  .app__blog {
-    .app__blog-title {
-      .app__blog-title-last-posts {
+  .app__blogRecent {
+    .app__blogRecent-title {
+      .app__blogRecent-title-last-posts {
         align-self: flex-end;
         display: block;
       }

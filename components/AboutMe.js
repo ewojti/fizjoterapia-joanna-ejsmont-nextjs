@@ -18,16 +18,17 @@ const AboutMe = () => {
       >
         <Image src={images.aboutme} alt="fizjoterapia joanna ejsmont" />
       </div>
-      <div className="app__aboutme-description app__aboutme-container">
-        <div
-          className="app__aboutme-description-text"
-          data-aos="fade-in"
-          data-aos-duration="1800"
-        >
-          <h2 className="app__heading-h2">Kim jestem?</h2>
-          <p className="p__lato">
-            Ukończyłam studia licencjackie oraz magisterskie z kierunku
-            fizjoterapia na Uniwersytecie Medycznym w Białymstoku.
+      <div
+        className="app__aboutme-description app__aboutme-container"
+        data-aos="fade-in"
+        data-aos-duration="1800"
+      >
+        <div className="app__aboutme-description-text">
+          <h1 className="app__heading-h2">Kim jestem?</h1>
+          <div className="app__border-section" data-aos="fade-right"></div>
+          <p className="p__cormorant">
+            Jestem absolwentką studiów licencjackich oraz magisterskich z
+            kierunku fizjoterapia na Uniwersytecie Medycznym w Białymstoku.
             <br />
             <br />
             Od 2018 roku pracuję jako fizjoterapeutka, a w 2021 roku założyłam

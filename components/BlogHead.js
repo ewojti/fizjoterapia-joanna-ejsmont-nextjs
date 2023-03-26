@@ -1,19 +1,24 @@
-import React from 'react'
-import Link from 'next/link';
-import Image from 'next/image';
+import React from "react";
+import Link from "next/link";
+import Image from "next/image";
 import images from "@/constants/images";
 
 const BlogHead = () => {
   return (
     <div className="app__blogHead">
       <div className="app__blogHead-title">
-        <div className="app__blogHead-title-logo">
+        <div
+          className="app__blogHead-title-logo"
+        >
           <Link href="/">
-            <Image src={images.logo_footer} alt=""></Image>
+            <Image
+              src={images.logo_footer}
+              alt="Logo fizjoterapia Joanna Ejsmont"
+            ></Image>
           </Link>
         </div>
         <hr className="horizontal-line"></hr>
-        <Link href='/blog'>
+        <Link href="/blog">
           <h1 className="app__heading-h1">BLOG</h1>
         </Link>
       </div>
@@ -32,6 +37,6 @@ const BlogHead = () => {
       </div>
     </div>
   );
-}
+};
 
-export default BlogHead
+export default BlogHead;

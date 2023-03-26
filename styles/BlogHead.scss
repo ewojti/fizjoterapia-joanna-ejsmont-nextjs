@@ -5,7 +5,7 @@
   flex-direction: column;
   .app__blogHead-title {
     display: flex;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     .app__blogHead-title-logo {
       align-self: center;
       img {
@@ -23,7 +23,7 @@
   }
   .app__blogHead-author {
     display: flex;
-    margin-bottom: 3rem;
+    margin-bottom: 0.5rem;
     .app__blogHead-author-img {
       img {
         width: 70px;

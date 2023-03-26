@@ -25,7 +25,7 @@ const Abilities = () => {
           >
             <div className="app__abilities-list-item-description">
               <h2 className="app__heading-h2">{service.title}</h2>
-              <ul>
+              <ul className="text-focus-in">
                 {service.types.map((type) => (
                   <li key={nanoid()}>
                     <span className="p__cormorant">{type}</span>

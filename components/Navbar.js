@@ -22,10 +22,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="app__navbar fixed-top">
-      <div className="app__navbar-logo" onClick={scrollToTop} >
-        <Link className="app__navbar-logo-link"
-        href='/'>
+    <nav className="app__navbar fixed-top slide-in-top">
+      <div className="app__navbar-logo" onClick={scrollToTop}>
+        <Link className="app__navbar-logo-link" href="/">
           <Image
             className="app__navbar-logo-desktop"
             src={images.logo_header}
@@ -65,11 +64,11 @@ const Navbar = () => {
           href="https://www.facebook.com/profile.php?id=100064665101610"
           target="_blank"
         >
-        <Image
-          className="app__navbar-icons-fb"
-          src={images.facebook}
-          alt="fizjoterapia"
-        />
+          <Image
+            className="app__navbar-icons-fb"
+            src={images.facebook}
+            alt="fizjoterapia"
+          />
         </Link>
       </div>
     </nav>
