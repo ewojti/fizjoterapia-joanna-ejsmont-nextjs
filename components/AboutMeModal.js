@@ -14,8 +14,8 @@ const AboutMeModal = () => {
       {modal ? (
         <div className="app__modal">
           <div onClick={toggleModal} className="modal-overlay"></div>
-          <div className="app__modal-content p__cormorant">
-            <h2 className="app__heading-h3">Ukończone kursy:</h2>
+          <div className="app__modal-content">
+            <h2 className="app__heading-h2">Ukończone kursy:</h2>
             <ul className="p__cormorant">
               <li>
                 <p>2023 - Integracyjna terapia blizn</p>

@@ -25,7 +25,10 @@ const AboutMe = () => {
       >
         <div className="app__aboutme-description-text">
           <h1 className="app__heading-h2">Kim jestem?</h1>
-          <div className="app__border-section" data-aos="fade-right"></div>
+          <div
+            className="app__border-section-green"
+            data-aos="fade-in"
+          ></div>
           <p className="p__cormorant">
             Jestem absolwentką studiów licencjackich oraz magisterskich z
             kierunku fizjoterapia na Uniwersytecie Medycznym w Białymstoku.
@@ -39,9 +42,7 @@ const AboutMe = () => {
             kobiet w trakcie i po ciąży.
           </p>
         </div>
-        <div className="app__aboutme-description-btn">
           <AboutMeModal />
-        </div>
       </div>
     </div>
   );

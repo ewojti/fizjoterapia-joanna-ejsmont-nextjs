@@ -10,7 +10,7 @@ const Abilities = () => {
   }, []);
   return (
     <div id="uslugi" className="app__abilities section__padding">
-      <div className="app__border-section" data-aos="fade-right"></div>
+      <div className="app__border-section-grey" data-aos="fade-right"></div>
       <h1 className="app__heading-h1" data-aos="fade-up">
         W czym mogę Ci pomóc?
       </h1>
@@ -25,6 +25,10 @@ const Abilities = () => {
           >
             <div className="app__abilities-list-item-description">
               <h2 className="app__heading-h2">{service.title}</h2>
+              <div
+                className="app__border-section-green"
+                data-aos="fade-right"
+              ></div>
               <ul className="text-focus-in">
                 {service.types.map((type) => (
                   <li key={nanoid()}>

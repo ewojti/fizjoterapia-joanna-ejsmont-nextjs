@@ -13,7 +13,7 @@
     width: 100%;
     padding: 0.5rem 2rem 0 2rem;
     h1 {
-      margin-bottom: 0.7rem;
+      margin: 1rem 0;
       span {
         font-weight: $--fw-light;
       }
@@ -39,6 +39,7 @@
           align-self: center;
           color: $--clr-grey;
           line-height: 2.3rem;
+          font-size: $--fs-body;
         }
       }
     }
@@ -46,7 +47,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 1rem;
-      margin: 1rem 0;
+      margin: 1rem 0 2rem 0;
       button:first-child {
         border: solid 2px $--clr-green;
         &:hover {
@@ -96,7 +97,7 @@
       display: flex;
       flex-direction: column;
       padding: 1rem 2rem;
-      h3 {
+      h1 {
         margin-bottom: 2rem;
       }
       .app__header-contact {

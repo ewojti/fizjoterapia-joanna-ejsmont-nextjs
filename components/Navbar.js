@@ -68,6 +68,7 @@ const Navbar = () => {
             className="app__navbar-icons-fb"
             src={images.facebook}
             alt="fizjoterapia"
+            priority
           />
         </Link>
       </div>

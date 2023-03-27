@@ -30,6 +30,7 @@ const Separator = () => {
             alt="fizjoterapia"
             fill
             style={{ objectFit: "cover" }}
+            priority
           />
           <Image
           className="app__bg-separator-img-mobile"

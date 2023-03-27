@@ -39,13 +39,20 @@ a {
   flex-direction: column;
 }
 
-.app__border-section {
-  margin: 0 auto;
-  margin-bottom: 1.5rem;
+.app__border-section-grey,
+.app__border-section-green {
   max-width: 800px;
   width: 100%;
   border: 1px solid;
+} 
+
+.app__border-section-grey{
   border-image: linear-gradient(to right, $--clr-grey, $--clr-light) 1;
+  margin: 0 auto;
+}
+
+.app__border-section-green{
+  border-image: linear-gradient(to right, $--clr-green, $--clr-light) 1;
 }
 
 .app__bg-separator {
@@ -61,7 +68,7 @@ a {
   .app__bg-separator {
     .app__bg-separator-img-desktop {
       display: block;
-      object-position: top;
+      object-position: right;
     }
     .app__bg-separator-img-mobile {
       display: none;
@@ -71,8 +78,12 @@ a {
 
 @media screen and (min-width: 1024px) {
   .app__bg-separator {
+    .app__bg-separator-img-desktop {
+      object-position: top;
+    }
   }
 }
+
 
 .app__heading-h1 {
   font-family: $--ff-cormorant;
@@ -114,9 +125,6 @@ a {
   scroll-snap-type: y mandatory;
 }
 
-.app__page-list {
-}
-
 /*** modal globals ***/
 
 .modal-overlay {
@@ -150,7 +158,6 @@ a {
     max-width: 360px;
     width: 100%;
     height: auto;
-    overflow-y: auto;
     h1 {
       margin-bottom: 0.8rem;
       text-align: center;
@@ -191,7 +198,6 @@ a {
   .app__modal {
     .app__modal-content {
       max-width: 470px;
-      width: 100%;
     }
   }
 }
@@ -200,7 +206,6 @@ a {
   .app__modal {
     .app__modal-content {
       max-width: 690px;
-      width: 100%;
     }
   }
 }
@@ -209,7 +214,6 @@ a {
   .app__modal {
     .app__modal-content {
       max-width: 1000px;
-      width: 100%;
     }
   }
 }

@@ -64,11 +64,13 @@ const Header = () => {
           className="app__header-img-desktop"
           src={images.header}
           alt="fizjoterapia rehabilitacja sokółka"
+          priority
         />
         <Image
           className="app__header-img-mobile"
           src={images.headerBalanc}
           alt="fizjoterapia rehabilitacja sokółka"
+          priority
         />
       </div>
     </div>
