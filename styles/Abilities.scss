@@ -11,6 +11,7 @@
   }
   h1 {
     text-align: center;
+    margin-top: 1rem;
     margin-bottom: 4rem;
   }
   .app__abilities-list {
@@ -65,9 +66,6 @@
 
 @media screen and (min-width: 768px) {
   .app__abilities {
-    h1 {
-      margin-top: 2rem;
-    }
     .app__abilities-list {
       .app__abilities-list-item {
         max-width: 900px;

@@ -8,19 +8,25 @@ const BlogRecent = ({ posts }) => {
     useEffect(() => {
       Aos.init({});
     }, []);
+    const lastThreePosts = posts.slice(0, 3)
   return (
-      <div id="blog" className="app__blogRecent section__padding">
-      <div className="app__blogRecent-title">
-        <h1 className="app__heading-h1" data-aos="fade-right">
-          Mój Blog
-        </h1>
+    <div id="blog" className="app__blogRecent section__padding">
+      <div className="app__blogRecent-title" data-aos="fade-right">
+        <h1 className="app__heading-h1">Mój Blog</h1>
         <h3 className="app__blogRecent-title-last-posts app__heading-h3">
-        Ostatnio dodane posty...
+          Ostatnio dodane posty...
         </h3>
-        </div>
-        <div className="app__blogRecent-posts">
-        {posts.map((post) => (
-          <div className="app__blogRecent-post" key={nanoid()}>
+      </div>
+      <div className="app__border-section-grey" data-aos="fade-right"></div>
+      <div className="app__blogRecent-posts">
+        {lastThreePosts.map((post) => (
+          <div
+            className="app__blogRecent-post"
+            key={nanoid()}
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000"
+          >
             <div className="app__blogRecent-post-head">
               <span className="overlay"></span>
               <div className="app__blogRecent-post-date">
@@ -43,7 +49,12 @@ const BlogRecent = ({ posts }) => {
         ))}
       </div>
       <Link href="/blog" className="app__blogRecent-button-link">
-        <button className="app__blogRecent-button p__cormorant">
+        <button
+          className="app__blogRecent-button p__cormorant"
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1000"
+        >
           Odwiedź blog
         </button>
       </Link>

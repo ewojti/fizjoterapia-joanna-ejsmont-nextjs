@@ -1,10 +1,11 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { GrMail } from "react-icons/gr";
 import { HiPhone } from "react-icons/hi";
 import { ImLocation2 } from "react-icons/im";
 import { RiTimeFill } from "react-icons/ri";
 
 const Contact = () => {
+
   return (
     <div id="kontakt" className="app__contact section__padding">
       <div className="app__contact-info">
@@ -22,12 +23,14 @@ const Contact = () => {
               <br /> <span>*wejście od strony parku</span>
             </p>
           </div>
-          <div className="app__contact-info-item">
-            <span className="app__react-icons">
-              <HiPhone />
-            </span>
-            <p>793-183-080</p>
-          </div>
+          <a href="tel:+48793183080">
+            <div className="app__contact-info-item">
+              <span className="app__react-icons">
+                <HiPhone />
+              </span>
+              <p>793-183-080</p>
+            </div>
+          </a>
           <div className="app__contact-info-item">
             <span className="app__react-icons">
               <RiTimeFill />
@@ -37,12 +40,14 @@ const Contact = () => {
               sob: 8:00 - 14:00
             </p>
           </div>
-          <div className="app__contact-info-item">
-            <span className="app__react-icons">
-              <GrMail />
-            </span>
-            <p>fizjoterapia.ejsmont@gmail.com</p>
-          </div>
+          <a href="mailto:fizjoterapia.ejsmont@gmail.com">
+            <div className="app__contact-info-item">
+              <span className="app__react-icons">
+                <GrMail />
+              </span>
+              <p>fizjoterapia.ejsmont@gmail.com</p>
+            </div>
+          </a>
         </div>
       </div>
       <div className="app__contact-map">

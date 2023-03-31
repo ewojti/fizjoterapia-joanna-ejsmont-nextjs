@@ -25,7 +25,7 @@ const Separator = () => {
           }}
         >
           <Image
-          className="app__bg-separator-img-desktop"
+            className="app__bg-separator-img-desktop"
             src={images.cwiczenia}
             alt="fizjoterapia"
             fill
@@ -33,7 +33,7 @@ const Separator = () => {
             priority
           />
           <Image
-          className="app__bg-separator-img-mobile"
+            className="app__bg-separator-img-mobile"
             src={images.headerMob}
             alt="fizjoterapia"
             fill

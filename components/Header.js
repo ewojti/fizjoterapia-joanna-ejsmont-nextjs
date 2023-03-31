@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import PriceList from "./PriceList";
+import React, { useState, useEffect } from "react";
+import PriceListModal from "./PriceListModal";
 import Image from "next/image";
 import images from "@/constants/images";
 import { ImLocation2 } from "react-icons/im";
@@ -11,6 +11,19 @@ const Header = () => {
   useEffect(() => {
     Aos.init({});
   }, []);
+
+  const [isOpen, setIsOpen] = useState(false);
+  const handleOpenModal = () => setIsOpen(true);
+  const handleCloseModal = () => setIsOpen(false);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add("active-modal");
+    } else {
+      document.body.classList.remove("active-modal");
+    }
+  }, [isOpen]);
+
   return (
     <div className="app__header">
       <div className="app__header-text">
@@ -49,9 +62,16 @@ const Header = () => {
             data-aos="fade-up"
             data-aos-delay="1300"
           >
-            <a href="tel:793183080">Umów wizytę</a>
+            <a href="tel:+48793183080">Umów wizytę</a>
           </button>
-          <PriceList />
+          <button
+            className="custom__button"
+            data-aos="fade-up"
+            data-aos-delay="1300"
+            onClick={handleOpenModal}
+          >
+            Sprawdź cennik
+          </button>
         </div>
         <div className="app__header-number"></div>
       </div>
@@ -73,6 +93,7 @@ const Header = () => {
           priority
         />
       </div>
+      <PriceListModal handleCloseModal={handleCloseModal} isOpen={isOpen} />
     </div>
   );
 };

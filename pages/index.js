@@ -1,7 +1,3 @@
-import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.scss";
 import Navbar from "@/components/Navbar";
 import Header from "@/components/Header";
 import AboutMe from "@/components/AboutMe";
@@ -12,10 +8,14 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import "@/styles/variable.module.scss";
 import { getPosts } from "@/services";
+import Head from "next/head";
 
 export default function Home({posts}) {
   return (
     <>
+      <Head>
+        <title>Fizjoterapia Joanna Ejsmont - Sokółka</title>
+      </Head>
       <Navbar />
       <Header />
       <Abilities />

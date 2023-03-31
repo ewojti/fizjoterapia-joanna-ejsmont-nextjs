@@ -5,6 +5,7 @@ import NavigateBtn from "@/components/NavigateBtn";
 import { getPosts } from "@/services";
 import "aos/dist/aos.css";
 import Aos from "aos";
+import Head from "next/head";
 
 const BlogList = ({ posts }) => {
   useEffect(() => {
@@ -12,11 +13,12 @@ const BlogList = ({ posts }) => {
   }, []);
   return (
     <div className="app__blogList app__blogPage section__padding" id="bloglist">
+      <Head>
+        <title>Fizjoterapia Joanna Ejsmont - Blog</title>
+      </Head>
       <NavigateBtn />
       <BlogHead />
-      <div
-        className="app__blogList-items"
-      >
+      <div className="app__blogList-items">
         {posts.map((post) => (
           <div className="app__blogList-item" key={post.node.title}>
             <Link href={`/blog/${post.node.slug}`}>

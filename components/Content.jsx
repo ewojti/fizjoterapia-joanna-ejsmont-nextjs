@@ -61,14 +61,8 @@ const getContentFragment = (index, text, obj, type) => {
       );
     case "image":
       return (
-        <div className="app__blogPage-post-img">
-          <Image
-            key={index}
-            loader={() => obj.src}
-            src={obj.src}
-            alt={obj.title}
-            fill
-          />
+        <div className="app__blogPage-post-img" key={index}>
+          <Image loader={() => obj.src} src={obj.src} alt={obj.title} fill />
         </div>
       );
     default:

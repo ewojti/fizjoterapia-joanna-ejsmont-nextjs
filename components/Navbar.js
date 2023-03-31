@@ -29,6 +29,7 @@ const Navbar = () => {
             className="app__navbar-logo-desktop"
             src={images.logo_header}
             alt="fizjoterapia joanna Ejsmont"
+            priority
           />
         </Link>
       </div>
