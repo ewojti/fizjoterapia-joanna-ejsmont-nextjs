@@ -173,8 +173,7 @@ a {
       letter-spacing: 0.08rem;
       li {
         color: $--clr-green;
-        font-size: 1.7rem;
-        margin-bottom: 1rem;
+        margin-bottom: 0.3rem;
         display: flex;
         p {
           margin-bottom: 1.1rem;
@@ -280,7 +279,7 @@ a {
   color: $--clr-grey;
   font-weight: $--fw-semiBold;
   letter-spacing: 0.04em;
-  font-size: $--fs-h3-mobile;
+  font-size: $--fs-body-mobile;
 }
 
 .p__lato {

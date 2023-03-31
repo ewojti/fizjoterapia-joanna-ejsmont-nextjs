@@ -43,7 +43,7 @@ const Header = () => {
             <span className="app__react-icons">
               <ImLocation2 />
             </span>
-            <p className="p__cormorant">Osiedle Centrum 21, Sokółka</p>
+            <h3 className="app__heading-h3">Osiedle Centrum 21, Sokółka</h3>
           </div>
           <div
             className="app__header-info-item"
@@ -53,7 +53,7 @@ const Header = () => {
             <span className="app__react-icons">
               <HiPhone />
             </span>
-            <p className="p__cormorant">793-183-080</p>
+            <h3 className="app__heading-h3">793-183-080</h3>
           </div>
         </div>
         <div className="app__header-btn">

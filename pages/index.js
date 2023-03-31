@@ -15,6 +15,10 @@ export default function Home({posts}) {
     <>
       <Head>
         <title>Fizjoterapia Joanna Ejsmont - Sokółka</title>
+        <meta
+          name="description"
+          content="Witaj w Gabinet Fizjoterapii Joanna Ejsmont, prowadzonym przez doświadczoną fizjoterapeutkę. Specjalizuję się w usługach fizjoterapii pacjentów neurologicznych, kobiet w ciąży oraz dzieci. Znajdziesz u mnie indywidualne podejście do każdego pacjenta oraz skuteczną rehabilitację."
+        />
       </Head>
       <Navbar />
       <Header />

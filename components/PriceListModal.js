@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, {useEffect } from "react";
 import priceData from "../constants/priceData";
 import "aos/dist/aos.css";
 import Aos from "aos";
@@ -7,10 +7,6 @@ const PriceListModal = ({isOpen, handleCloseModal}) => {
   useEffect(() => {
     Aos.init({});
   }, []);
-
-  const toggleModal = () => {
-    setModal(!modal);
-  };
 
   return (
     isOpen && (
