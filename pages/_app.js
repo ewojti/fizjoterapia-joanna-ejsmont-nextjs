@@ -11,9 +11,7 @@ import "@/styles/Navbar.scss";
 import "@/styles/NavigateBtn.scss";
 import "@/styles/PriceList.scss";
 import "@/styles/BlogList.scss";
-
-
-
+import "@/styles/variable.module.scss"
 
 export default function App({ Component, pageProps }) {
   return <Component {...pageProps} />

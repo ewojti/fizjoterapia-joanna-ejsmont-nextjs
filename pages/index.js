@@ -1,4 +1,3 @@
-
 import dynamic from "next/dynamic";
 import Head from "next/head";
 const Navbar = dynamic(() => import("@/components/Navbar"));
