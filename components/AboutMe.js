@@ -31,7 +31,14 @@ const AboutMe = () => {
           data-aos="fade-in"
           data-aos-duration="1800"
         >
-          <Image src={images.aboutme} alt="fizjoterapia joanna ejsmont" />
+          <Image
+            src={images.aboutme}
+            alt="fizjoterapia joanna ejsmont"
+            sizes="(min-width: 300px) 100vw,
+              33vw"
+            priority
+            unoptimized
+          />
         </div>
         <div
           className="app__aboutme-description app__aboutme-container"

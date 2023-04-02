@@ -1,11 +1,11 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import { GrMail } from "react-icons/gr";
 import { HiPhone } from "react-icons/hi";
 import { ImLocation2 } from "react-icons/im";
 import { RiTimeFill } from "react-icons/ri";
 
 const Contact = () => {
-
+  const position = [51.505, -0.09];
   return (
     <div id="kontakt" className="app__contact section__padding">
       <div className="app__contact-info">

@@ -31,13 +31,18 @@ const Separator = () => {
             fill
             style={{ objectFit: "cover" }}
             priority
+            sizes="(min-width: 1024px) 100vw,
+              33vw"
           />
           <Image
             className="app__bg-separator-img-mobile"
             src={images.headerMob}
             alt="fizjoterapia"
             fill
+            priority
             style={{ objectFit: "cover" }}
+            sizes="(max-width: 1024px) 100vw,
+              33vw"
           />
         </div>
       </div>

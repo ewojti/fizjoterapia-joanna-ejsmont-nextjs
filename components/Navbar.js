@@ -2,13 +2,8 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import images from "@/constants/images";
-import "aos/dist/aos.css";
-import Aos from "aos";
 
 const Navbar = () => {
-  useEffect(() => {
-    Aos.init({});
-  }, []);
   const [isActive, setActive] = useState(false);
   const handleToggle = () => {
     setActive(!isActive);
