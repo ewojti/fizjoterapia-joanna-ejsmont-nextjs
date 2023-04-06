@@ -14,6 +14,7 @@
     "eslint-config-next": "13.2.4",
     "graphql-request": "^5.2.0",
     "leaflet": "^1.9.3",
+    "link-react": "^3.0.0",
     "next": "13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",

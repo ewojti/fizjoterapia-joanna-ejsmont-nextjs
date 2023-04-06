@@ -27,7 +27,7 @@ export default function Custom404() {
           <b>tel:</b> 793-183-080
         </p>
         <p style={{ fontSize: "2rem", marginBottom: "20px" }}>
-          <b>adres:</b> Osidele Centrum 21, 16-100 Sokółka
+          <b>adres:</b> Osiedle Centrum 21, 16-100 Sokółka
         </p>
       </div>
   );

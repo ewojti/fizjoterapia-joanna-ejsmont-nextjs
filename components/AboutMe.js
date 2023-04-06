@@ -38,6 +38,7 @@ const AboutMe = () => {
               33vw"
             priority
             unoptimized
+            quality="100"
           />
         </div>
         <div

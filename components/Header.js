@@ -40,10 +40,10 @@ const Header = () => {
             data-aos="fade-right"
             data-aos-delay="800"
           >
-            <span className="app__react-icons">
-              <ImLocation2 />
-            </span>
-            <h3 className="app__heading-h3">Osiedle Centrum 21, Sokółka</h3>
+              <span className="app__react-icons">
+                <ImLocation2 />
+              </span>
+              <p className="p__cormorant">Osiedle Centrum 21, Sokółka</p>
           </div>
           <div
             className="app__header-info-item"
@@ -57,13 +57,15 @@ const Header = () => {
           </div>
         </div>
         <div className="app__header-btn">
-          <button
-            className="custom__button"
-            data-aos="fade-up"
-            data-aos-delay="1300"
-          >
-            <a href="tel:+48793183080">Umów wizytę</a>
-          </button>
+          <a href="tel:+48793183080">
+            <button
+              className="custom__button"
+              data-aos="fade-up"
+              data-aos-delay="1300"
+            >
+              Umów wizytę
+            </button>
+          </a>
           <button
             className="custom__button"
             data-aos="fade-up"

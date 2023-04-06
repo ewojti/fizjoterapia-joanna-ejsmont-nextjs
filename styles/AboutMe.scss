@@ -41,7 +41,7 @@
   }
 }
 
-@media screen and (min-width: 825px) {
+@media screen and (min-width: 850px) {
   .app__aboutme {
     flex-direction: row;
     justify-content: center;
@@ -77,12 +77,6 @@
       height: 580px;
       line-height: normal;
       vertical-align: bottom;
-      .app__aboutme-description-text {
-        h2,
-        p {
-          margin-bottom: 0.7rem;
-        }
-      }
     }
     .app__aboutme-img {
       max-width: 430px;

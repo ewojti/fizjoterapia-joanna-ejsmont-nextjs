@@ -37,7 +37,7 @@
         }
         p {
           align-self: center;
-          color: $--clr-grey;
+          color: $--clr-green;
           line-height: 2.3rem;
           font-size: $--fs-body;
         }
@@ -48,12 +48,15 @@
       flex-wrap: wrap;
       gap: 1rem;
       margin: 1rem 0 2rem 0;
-      button:first-child {
-        border: solid 2px $--clr-green;
-        &:hover {
-          color: $--clr-green;
-          background-color: $--clr-light;
-          border: solid 2px $--clr-green;
+      a {
+        button:first-child {
+          background-color: $--clr-green;
+          color: $--clr-light;
+          &:hover {
+            color: $--clr-green;
+            background-color: $--clr-light;
+            border: solid 2px $--clr-green;
+          }
         }
       }
       button:last-child {

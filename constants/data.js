@@ -1,22 +1,22 @@
 const services = [
   {
     id: 1,
-    title: "Fizjoterapia uroginekologiczna",
+    title: "Fizjoterapia neurologiczna",
+    types: [
+      "rehabilitacja pacjentów z chorobami nerwowo-mięśniowymi i neurologicznymi t.j.: udar mózgu, stwardnienie rozsiane",
+      "bóle głowy",
+      'trening chodu, równowagi i koordynacji oraz zapobieganie upadkom'
+    ],
+  },
+  {
+    id: 2,
+    title: "Fizjoterapia kobiet w trakcie i po ciąży",
     icon: `../../public/assets/mother/.png`,
     types: [
       "dolegliwości bólowe w ciąży",
       "przygotowanie do porodu",
       "terapia blizn",
       "trening medyczny w rozejściu mięśni brzucha",
-    ],
-  },
-  {
-    id: 2,
-    title: "Fizjoterapia neurologiczna",
-    types: [
-      "rehabilitacja pacjentów z chorobami nerwowo-mięśniowymi i neurologicznymi t.j.: udar mózgu, stwardnienie rozsiane",
-      "bóle głowy",
-      'trening chodu, równowagi i koordynacji oraz zapobieganie upadkom'
     ],
   },
   {
