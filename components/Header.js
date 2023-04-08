@@ -36,7 +36,7 @@ const Header = () => {
         </h1>
         <div className="app__header-contact">
           <div
-            className="app__header-info-item"
+            className="app__header-contact-item"
             data-aos="fade-right"
             data-aos-delay="800"
           >
@@ -46,7 +46,7 @@ const Header = () => {
               <p className="p__cormorant">Osiedle Centrum 21, Sokółka</p>
           </div>
           <div
-            className="app__header-info-item"
+            className="app__header-contact-item"
             data-aos="fade-right"
             data-aos-delay="800"
           >

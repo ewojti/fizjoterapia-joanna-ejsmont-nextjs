@@ -10,13 +10,13 @@ const AboutMeModal = ({isOpen, handleClose}) => {
         <div onClick={handleClose} className="modal-overlay"></div>
         <div className="app__modal-content">
           <h2 className="app__heading-h2">Ukończone kursy:</h2>
-          <ul className="p__cormorant">
+          <div className="p__cormorant">
             {courses.map((course) => (
-              <li key={course.id.toString()}>
-                <p className="p__cormorant">{course.title}</p>
-              </li>
+                <p className="p__cormorant" key={course.id.toString()}>
+                  {course.title}
+                </p>
             ))}
-          </ul>
+          </div>
           <button className="modal-close custom__button" onClick={handleClose}>
             Zamknij
           </button>

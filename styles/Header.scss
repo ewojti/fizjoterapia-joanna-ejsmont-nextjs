@@ -13,24 +13,19 @@
     width: 100%;
     padding: 0.5rem 1rem 0 1rem;
     h1 {
-      margin: 1rem 0;
+      margin: 2rem 0;
       span {
         font-weight: $--fw-light;
       }
-    }
-    h3 {
-      margin-bottom: 1rem;
-      font-style: italic;
     }
     .app__header-contact {
       display: flex;
       flex-direction: column;
       margin: 1rem 0;
-      gap: 1rem;
-      .app__header-info-item {
+      gap: 2rem;
+      .app__header-contact-item {
         display: flex;
         height: 32px;
-        font-size: 1.5rem;
         span {
           margin-right: 1.5rem;
           height: 1.5rem;
@@ -46,7 +41,7 @@
     .app__header-btn {
       display: flex;
       flex-wrap: wrap;
-      gap: 1rem;
+      gap: 1.2rem;
       margin: 1rem 0 2rem 0;
       a {
         width: 100%;
@@ -106,8 +101,7 @@
       }
       .app__header-contact {
         margin-top: 0;
-        gap: 2rem;
-        .app__header-info-item {
+        .app__header-contact-item {
           p {
             font-size: 2rem;
           }
@@ -145,6 +139,9 @@
       }
       .app__header-btn {
         margin-top: 1.6rem;
+        a {
+          width:auto;
+        }
       }
     }
     .app__header-img {
