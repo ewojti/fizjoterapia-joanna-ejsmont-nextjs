@@ -4,13 +4,8 @@ import Image from "next/image";
 import images from "@/constants/images";
 import { ImLocation2 } from "react-icons/im";
 import { HiPhone } from "react-icons/hi";
-import "aos/dist/aos.css";
-import Aos from "aos";
 
 const Header = () => {
-  useEffect(() => {
-    Aos.init({});
-  }, []);
 
   const [isOpen, setIsOpen] = useState(false);
   const handleOpenModal = () => setIsOpen(true);
@@ -56,20 +51,16 @@ const Header = () => {
             <h3 className="app__heading-h3">793-183-080</h3>
           </div>
         </div>
-        <div className="app__header-btn">
+        <div className="app__header-btn fade-in-bottom">
           <a href="tel:+48793183080">
             <button
               className="custom__button"
-              data-aos="fade-up"
-              data-aos-delay="1300"
             >
               Umów wizytę
             </button>
           </a>
           <button
             className="custom__button"
-            data-aos="fade-up"
-            data-aos-delay="1300"
             onClick={handleOpenModal}
           >
             Sprawdź cennik
