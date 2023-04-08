@@ -66,6 +66,7 @@ a {
   }
   .app__bg-separator-img-mobile {
     object-position: 0 90px;
+    transition: object-position 0.1s;
   }
 }
 
