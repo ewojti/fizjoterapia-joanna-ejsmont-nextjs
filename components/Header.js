@@ -22,29 +22,17 @@ const Header = () => {
   return (
     <div className="app__header">
       <div className="app__header-text">
-        <h1
-          className="app__heading-h1"
-          data-aos="fade-down"
-          data-aos-delay="400"
-        >
+        <h1 className="app__heading-h1 fade-in-left">
           Twój gabinet fizjoterapii w <span>Sokółce</span>
         </h1>
-        <div className="app__header-contact">
-          <div
-            className="app__header-contact-item"
-            data-aos="fade-right"
-            data-aos-delay="800"
-          >
+        <div className="app__header-contact fade-in-left-sec">
+          <div className="app__header-contact-item">
             <span className="app__react-icons">
               <ImLocation2 />
             </span>
             <p className="p__cormorant">Osiedle Centrum 21, Sokółka</p>
           </div>
-          <div
-            className="app__header-contact-item"
-            data-aos="fade-right"
-            data-aos-delay="800"
-          >
+          <div className="app__header-contact-item">
             <span className="app__react-icons">
               <HiPhone />
             </span>
@@ -53,14 +41,12 @@ const Header = () => {
         </div>
         <div className="app__header-btn fade-in-bottom">
           <a href="tel:+48793183080">
-            <button
-              className="custom__button"
-            >
+            <button className="custom__button fade-in-left-three">
               Umów wizytę
             </button>
           </a>
           <button
-            className="custom__button"
+            className="custom__button fade-in-left-four"
             onClick={handleOpenModal}
           >
             Sprawdź cennik
@@ -68,7 +54,7 @@ const Header = () => {
         </div>
         <div className="app__header-number"></div>
       </div>
-      <div className="app__header-img fade-in">
+      <div className="app__header-img fade-in-sec">
         <Image
           className="app__header-img-desktop"
           src={images.header}
