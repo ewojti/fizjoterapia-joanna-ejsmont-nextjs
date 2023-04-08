@@ -40,10 +40,10 @@ const Header = () => {
             data-aos="fade-right"
             data-aos-delay="800"
           >
-              <span className="app__react-icons">
-                <ImLocation2 />
-              </span>
-              <p className="p__cormorant">Osiedle Centrum 21, Sokółka</p>
+            <span className="app__react-icons">
+              <ImLocation2 />
+            </span>
+            <p className="p__cormorant">Osiedle Centrum 21, Sokółka</p>
           </div>
           <div
             className="app__header-contact-item"
@@ -77,11 +77,7 @@ const Header = () => {
         </div>
         <div className="app__header-number"></div>
       </div>
-      <div
-        className="app__header-img"
-        data-aos="fade-out"
-        data-aos-duration="4000"
-      >
+      <div className="app__header-img fade-in">
         <Image
           className="app__header-img-desktop"
           src={images.header}

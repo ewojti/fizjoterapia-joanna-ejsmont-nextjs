@@ -11,9 +11,9 @@
     align-items: flex-start;
     max-width: 800px;
     width: 100%;
-    padding: 0.5rem 1rem 0 1rem;
+    padding: 0.5rem 1rem 0;
     h1 {
-      margin: 1.5rem 0 0.7rem;
+      margin: 1rem 0 0.7rem;
       span {
         font-weight: $--fw-light;
       }
@@ -21,8 +21,8 @@
     .app__header-contact {
       display: flex;
       flex-direction: column;
-      margin: 1rem 0;
-      gap: 2rem;
+      margin: 0.8rem 0;
+      gap: 1.8rem;
       .app__header-contact-item {
         display: flex;
         height: 32px;
