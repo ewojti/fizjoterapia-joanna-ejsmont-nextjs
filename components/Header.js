@@ -22,17 +22,17 @@ const Header = () => {
   return (
     <div className="app__header">
       <div className="app__header-text">
-        <h1 className="app__heading-h1 fade-in-left">
+        <h1 className="app__heading-h1 fade-in">
           Twój gabinet fizjoterapii w <span>Sokółce</span>
         </h1>
-        <div className="app__header-contact fade-in-left-sec">
-          <div className="app__header-contact-item">
+        <div className="app__header-contact">
+          <div className="app__header-contact-item fade-in-left">
             <span className="app__react-icons">
               <ImLocation2 />
             </span>
             <p className="p__cormorant">Osiedle Centrum 21, Sokółka</p>
           </div>
-          <div className="app__header-contact-item">
+          <div className="app__header-contact-item fade-in-left-sec">
             <span className="app__react-icons">
               <HiPhone />
             </span>
