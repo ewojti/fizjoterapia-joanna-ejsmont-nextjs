@@ -41,12 +41,12 @@ const Header = () => {
         </div>
         <div className="app__header-btn fade-in-bottom">
           <a href="tel:+48793183080">
-            <button className="custom__button fade-in-left-three">
+            <button className="custom__button">
               Umów wizytę
             </button>
           </a>
           <button
-            className="custom__button fade-in-left-four"
+            className="custom__button"
             onClick={handleOpenModal}
           >
             Sprawdź cennik
@@ -54,7 +54,7 @@ const Header = () => {
         </div>
         <div className="app__header-number"></div>
       </div>
-      <div className="app__header-img fade-in-sec">
+      <div className="app__header-img text-focus-in">
         <Image
           className="app__header-img-desktop"
           src={images.header}

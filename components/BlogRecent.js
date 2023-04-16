@@ -51,7 +51,7 @@ const BlogRecent = ({ posts }) => {
       <Link href="/blog" className="app__blogRecent-button-link">
         <button
           className="app__blogRecent-button p__cormorant"
-          data-aos="fade-out"
+          data-aos="fade-in"
         >
           Odwiedź blog
         </button>
