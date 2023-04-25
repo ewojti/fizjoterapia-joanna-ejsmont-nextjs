@@ -25,7 +25,10 @@ export default function Home({ posts }) {
           name="keywords"
           content="Fizjoterapia, Rehabilitacja, terapia manualna, fizjoterapia w ciąży, Sokółka, Joanna Ejsmont"
         ></meta>
-        <meta property="og:image" content="https://example.com/image.jpg" />
+        <meta
+          property="og:image"
+          content="https://drive.google.com/file/d/1Ua6x5bo2LtG5q9Ase2ySgjMyK6eS734x/view?usp=sharing"
+        />
         <meta name="author" content="Joanna Ejsmont" />
       </Head>
       <Navbar />
