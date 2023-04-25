@@ -37,7 +37,7 @@ const getContentFragment = (index, text, obj, type) => {
       );
     case "paragraph":
       return (
-        <p key={index} className="p__lato">
+        <p key={index} className="p__lato blog_text">
           {modifiedText.map((item, i) => (
             <React.Fragment key={i}>{item}</React.Fragment>
           ))}

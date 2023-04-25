@@ -19,12 +19,13 @@ export default function Home({ posts }) {
         <title>Fizjoterapia Joanna Ejsmont - Sokółka</title>
         <meta
           name="description"
-          content="Witaj w Gabinet Fizjoterapii Joanna Ejsmont, prowadzonym przez doświadczoną fizjoterapeutkę. Specjalizuję się w usługach fizjoterapii pacjentów neurologicznych, kobiet w ciąży oraz dzieci. Znajdziesz u mnie indywidualne podejście do każdego pacjenta oraz skuteczną rehabilitację."
+          content="Gabinet fizjoterapi w Sokółce prowadzony przez mgr.Joanna Ejsmont. Fizjoterapia ortopedyczna, neurologiczna, kobiet w trakcie i po ciąży oraz dzieci."
         />
         <meta
           name="keywords"
-          content="Fizjoterapia, Rehabilitacja, Sokółka, Joanna Ejsmont"
+          content="Fizjoterapia, Rehabilitacja, terapia manualna, fizjoterapia w ciąży, Sokółka, Joanna Ejsmont"
         ></meta>
+        <meta property="og:image" content="https://example.com/image.jpg" />
         <meta name="author" content="Joanna Ejsmont" />
       </Head>
       <Navbar />

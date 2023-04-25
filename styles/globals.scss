@@ -293,6 +293,10 @@ a {
   font-size: 16px;
 }
 
+.blog_text {
+  margin-top: 1rem;
+}
+
 @media screen and (min-width: 768px) {
   .app__heading-h1 {
     font-size: $--fs-h1;
