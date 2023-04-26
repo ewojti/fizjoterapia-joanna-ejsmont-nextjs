@@ -472,8 +472,8 @@ a {
 }
 
 .text-focus-in {
-	-webkit-animation: text-focus-in 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
-	        animation: text-focus-in 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+	-webkit-animation: text-focus-in 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: text-focus-in 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 @-webkit-keyframes text-focus-in {
