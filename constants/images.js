@@ -4,7 +4,6 @@ import header2 from "../public/assets/header2.png";
 import blog from "../public/assets/blog.jpg";
 import headerMob from "../public/assets/headerMob.jpg";
 import headerBalanc from "../public/assets/headerBalanc.jpg";
-import stopy from "../public/assets/stopy.jpg";
 import cwiczenia from "../public/assets/cwiczenia.jpg";
 import logo_header from "../public/assets/logo_header.png";
 import logo_footer from "../public/assets/logo_footer.png";
@@ -16,7 +15,6 @@ export default {
   aboutme,
   header,
   header2,
-  stopy,
   logo_header,
   logo_footer,
   headerMob,
