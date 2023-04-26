@@ -33,6 +33,7 @@ const Separator = () => {
             priority
             sizes="(min-width: 1024px) 100vw,
               33vw"
+              quality={60}
           />
           <Image
             className="app__bg-separator-img-mobile"

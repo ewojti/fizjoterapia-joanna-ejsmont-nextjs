@@ -57,7 +57,7 @@ const Header = () => {
       <div className="app__header-img text-focus-in">
         <Image
           className="app__header-img-desktop"
-          src={images.header}
+          src={images.header2}
           alt="fizjoterapia rehabilitacja sokółka"
           priority
           sizes="(min-width: 1024px) 50vw,
