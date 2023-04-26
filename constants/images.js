@@ -1,6 +1,6 @@
 import aboutme from "../public/assets/aboutme.jpg";
 import header from "../public/assets/header.jpg";
-import header2 from "../public/assets/header2.png";
+import header2 from "../public/assets/header2.PNG";
 import blog from "../public/assets/blog.jpg";
 import headerMob from "../public/assets/headerMob.jpg";
 import headerBalanc from "../public/assets/headerBalanc.jpg";
