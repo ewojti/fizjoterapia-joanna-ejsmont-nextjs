@@ -19,7 +19,7 @@ const BlogHead = () => {
         </div>
         <hr className="horizontal-line"></hr>
         <Link href="/blog">
-          <h1 className="app__heading-h1">BLOG</h1>
+          <h2 className="app__heading-h1">BLOG</h2>
         </Link>
       </div>
       <div className="app__blogHead-author">

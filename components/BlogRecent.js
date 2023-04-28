@@ -12,7 +12,7 @@ const BlogRecent = ({ posts }) => {
   return (
     <div id="blog" className="app__blogRecent section__padding">
       <div className="app__blogRecent-title" data-aos="fade-right">
-        <h1 className="app__heading-h1">Mój Blog</h1>
+        <h2 className="app__heading-h1">Mój Blog</h2>
         <h3 className="app__blogRecent-title-last-posts app__heading-h3">
           Ostatnio dodane posty...
         </h3>

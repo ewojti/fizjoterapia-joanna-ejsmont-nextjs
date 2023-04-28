@@ -47,7 +47,7 @@ const AboutMe = () => {
           data-aos-duration="1800"
         >
           <div className="app__aboutme-description-text">
-            <h1 className="app__heading-h2">Kim jestem?</h1>
+            <h2 className="app__heading-h2">Kim jestem?</h2>
             <div className="app__border-section-green" data-aos="fade-in"></div>
             <p className="p__cormorant">
               Jestem absolwentką studiów licencjackich oraz magisterskich z

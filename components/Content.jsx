@@ -21,11 +21,11 @@ const getContentFragment = (index, text, obj, type) => {
   switch (type) {
     case "heading-one":
       return (
-        <h1 key={index} className="app__heading-h1-blog">
+        <h2 key={index} className="app__heading-h1-blog">
           {modifiedText.map((item, i) => (
             <React.Fragment key={i}>{item}</React.Fragment>
           ))}
-        </h1>
+        </h2>
       );
     case "heading-two":
       return (

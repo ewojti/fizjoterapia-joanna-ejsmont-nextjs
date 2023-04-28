@@ -13,7 +13,7 @@ const PriceListModal = ({isOpen, handleCloseModal}) => {
       <div className="app__modal">
         <div onClick={handleCloseModal} className="modal-overlay"></div>
         <div className="app__modal-content">
-          <h1 className="app__heading-h1">Cennik:</h1>
+          <h2 className="app__heading-h1">Cennik:</h2>
           <ul className="p__cormorant">
             {priceData.map((price) => (
               <li key={price.id.toString()}>

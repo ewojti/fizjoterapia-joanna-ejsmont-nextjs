@@ -11,9 +11,9 @@ const Abilities = () => {
   return (
     <div id="uslugi" className="app__abilities section__padding">
       <div className="app__border-section-grey" data-aos="fade-right"></div>
-      <h1 className="app__heading-h1" data-aos="fade-up">
+      <h2 className="app__heading-h1" data-aos="fade-up">
         W czym mogę Ci pomóc?
-      </h1>
+      </h2>
       <div className="app__abilities-list">
         {services.map((service) => (
           <div
