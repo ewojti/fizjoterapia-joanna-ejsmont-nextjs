@@ -87,7 +87,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 720px) {
   .app__header {
     display: flex;
     flex-direction: row;
@@ -142,7 +142,7 @@
       .app__header-btn {
         margin-top: 1.6rem;
         a {
-          width:auto;
+          width:100%;
         }
       }
     }

@@ -24,6 +24,8 @@ const Navbar = () => {
             className="app__navbar-logo-desktop"
             src={images.logo_header}
             alt="fizjoterapia joanna Ejsmont"
+            sizes="(min-width: 200px) 100vw,
+              30vw"
             priority
           />
         </Link>
@@ -64,6 +66,8 @@ const Navbar = () => {
             className="app__navbar-icons-fb"
             src={images.facebook}
             alt="fizjoterapia"
+            sizes="(min-width: 200px) 50vw,
+              33vw"
             priority
           />
         </Link>

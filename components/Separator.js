@@ -31,7 +31,7 @@ const Separator = () => {
             fill
             style={{ objectFit: "cover" }}
             priority
-            sizes="(min-width: 1024px) 100vw,
+            sizes="(min-width: 768px) 100vw,
               33vw"
               quality={60}
           />
@@ -42,7 +42,7 @@ const Separator = () => {
             fill
             priority
             style={{ objectFit: "cover" }}
-            sizes="(max-width: 1024px) 100vw,
+            sizes="(max-width: 768px) 100vw,
               33vw"
           />
         </div>

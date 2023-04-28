@@ -34,8 +34,8 @@ const AboutMe = () => {
           <Image
             src={images.aboutme}
             alt="fizjoterapia joanna ejsmont"
-            sizes="(min-width: 300px) 30vw,
-              33vw"
+            sizes="(min-width: 300px) 60vw,
+              100vw"
             priority
             quality="100"
           />
