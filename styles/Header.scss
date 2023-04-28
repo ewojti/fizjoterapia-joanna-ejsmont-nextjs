@@ -43,8 +43,10 @@
       flex-wrap: wrap;
       gap: 1.2rem;
       margin: 1rem 0 2rem 0;
-      a {
+      a,button{
         width: 100%;
+      }
+      a {
         button:first-child {
           background-color: $--clr-green;
           color: $--clr-light;

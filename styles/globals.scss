@@ -245,11 +245,11 @@ a {
 .custom__button {
   background: #0f8a70;
   color: $--clr-light;
-  font-family: var(--font-base);
+  font-family: $--ff-inter;
   font-weight: 700;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.07em;
   line-height: 28px;
-  font-size: 16px;
+  font-size: 1.05rem;
   width: 100%;
   padding: 0.5rem 2rem;
   border-radius: 1px;

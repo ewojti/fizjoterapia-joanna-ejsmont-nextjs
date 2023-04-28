@@ -45,10 +45,7 @@ const Header = () => {
               Umów wizytę
             </button>
           </a>
-          <button
-            className="custom__button"
-            onClick={handleOpenModal}
-          >
+          <button className="custom__button" onClick={handleOpenModal}>
             Sprawdź cennik
           </button>
         </div>
