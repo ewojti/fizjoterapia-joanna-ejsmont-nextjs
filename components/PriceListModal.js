@@ -14,16 +14,14 @@ const PriceListModal = ({isOpen, handleCloseModal}) => {
         <div onClick={handleCloseModal} className="modal-overlay"></div>
         <div className="app__modal-content">
           <h2 className="app__heading-h1">Cennik:</h2>
-          <ul className="p__cormorant">
+          <div className="app__priceList p__cormorant">
             {priceData.map((price) => (
-              <li key={price.id.toString()}>
-                <p>
-                  {price.name}
-                  <span>{price.cost}</span>
-                </p>
-              </li>
+              <div key={price.id.toString()} className="app__priceList-item">
+                <p>{price.name}</p>
+                <span>{price.cost}</span>
+              </div>
             ))}
-          </ul>
+          </div>
           <button
             className="modal-close custom__button"
             onClick={handleCloseModal}
