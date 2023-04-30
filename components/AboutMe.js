@@ -2,15 +2,8 @@ import React, { useEffect, useState } from "react";
 import AboutMeModal from "./AboutMeModal";
 import Image from "next/image";
 import images from "@/constants/images";
-import "aos/dist/aos.css";
-import Aos from "aos";
 
 const AboutMe = () => {
-  
-  useEffect(() => {
-    Aos.init({});
-  }, []);
-  
   const [isOpen, setIsOpen] = useState(false);
   const handleOpenModal = () => setIsOpen(true);
   const handleCloseModal = () => setIsOpen(false);
@@ -26,25 +19,16 @@ const AboutMe = () => {
   return (
     <>
       <div id="omnie" className="app__aboutme section__padding">
-        <div
-          className="app__aboutme-img app__aboutme-container"
-          data-aos="fade-in"
-          data-aos-duration="1800"
-        >
+        <div className="app__aboutme-img app__aboutme-container">
           <Image
             src={images.aboutme}
             alt="fizjoterapia joanna ejsmont"
-            sizes="(min-width: 300px) 60vw,
-              100vw"
+            sizes="(min-width: 769px) 40vw
+            (max-width: 768px) 90vw"
             priority
-            quality="100"
           />
         </div>
-        <div
-          className="app__aboutme-description app__aboutme-container"
-          data-aos="fade-in"
-          data-aos-duration="1800"
-        >
+        <div className="app__aboutme-description app__aboutme-container">
           <div className="app__aboutme-description-text">
             <h2 className="app__heading-h2">Kim jestem?</h2>
             <div className="app__border-section-green" data-aos="fade-in"></div>

@@ -57,16 +57,14 @@ const Header = () => {
           src={images.header}
           alt="fizjoterapia rehabilitacja sokółka"
           priority
-          sizes="(min-width: 768px) 100vw,
-              40vw"
+          sizes="(min-width: 768px) 50vw"
         />
         <Image
           className="app__header-img-mobile"
           src={images.headerBalanc}
           alt="fizjoterapia rehabilitacja sokółka"
           priority
-          sizes="(max-width: 768px) 100vw,
-              33vw"
+          sizes="(max-width: 768px) 50vw"
         />
       </div>
       <PriceListModal handleCloseModal={handleCloseModal} isOpen={isOpen} />
