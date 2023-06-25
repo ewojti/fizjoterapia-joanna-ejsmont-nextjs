@@ -5,7 +5,7 @@ const services = [
   {
     id: 1,
     title: "Fizjoterapia ortopedyczna",
-    image: images.balancer,
+    image: images.neuro,
     types: [
       "dolegliwości bólowe kręgosłupa i stawów obwodowych",
       "stan po urazach narządu ruchu",
@@ -15,7 +15,7 @@ const services = [
   {
     id: 2,
     title: "Fizjoterapia neurologiczna",
-    image: images.neuro,
+    image: images.balancer,
     types: [
       "rehabilitacja pacjentów z chorobami nerwowo-mięśniowymi i neurologicznymi t.j.: udar mózgu, stwardnienie rozsiane",
       "bóle głowy",
