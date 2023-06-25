@@ -1,7 +1,11 @@
+import images from "@/constants/images";
+
+
 const services = [
   {
     id: 1,
     title: "Fizjoterapia ortopedyczna",
+    image: images.balancer,
     types: [
       "dolegliwości bólowe kręgosłupa i stawów obwodowych",
       "stan po urazach narządu ruchu",
@@ -11,16 +15,17 @@ const services = [
   {
     id: 2,
     title: "Fizjoterapia neurologiczna",
+    image: images.neuro,
     types: [
       "rehabilitacja pacjentów z chorobami nerwowo-mięśniowymi i neurologicznymi t.j.: udar mózgu, stwardnienie rozsiane",
       "bóle głowy",
-      'trening chodu, równowagi i koordynacji oraz zapobieganie upadkom'
+      "trening chodu, równowagi i koordynacji oraz zapobieganie upadkom",
     ],
   },
   {
     id: 3,
     title: "Fizjoterapia kobiet w trakcie i po ciąży",
-    icon: `../../public/assets/mother/.png`,
+    image: images.ciaza,
     types: [
       "dolegliwości bólowe w ciąży",
       "przygotowanie do porodu",
@@ -31,6 +36,7 @@ const services = [
   {
     id: 4,
     title: "Fizjoterapia dzieci",
+    image: images.dzieci,
     types: [
       "badanie i terapia stóp m.in. stóp płasko-koślawych",
       "wady postawy u dzieci od 4 roku życia",

@@ -134,6 +134,7 @@
   }
   .app__blogRecent-button:hover,
   .app__blogRecent-post:hover {
+    border: 2px solid $--clr-green;
     transition-duration: 0.3s;
     -webkit-box-shadow: 12px 13px 2px -2px rgba(159, 159, 159, 1);
     -moz-box-shadow: 12px 13px 2px -2px rgba(159, 159, 159, 1);

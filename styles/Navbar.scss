@@ -105,14 +105,21 @@
       color: $--clr-light;
       text-align: center;
       li {
+        z-index: 1;
         margin-bottom: 5rem;
         a {
           padding: 1rem;
         }
       }
     }
-    .app__navbar-icons {
-      display: none;
+    .app__navbar-links-socials{
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      .app__react-icons{
+        color: $--clr-light;
+        font-size: 3rem;
+      }
     }
   }
 
@@ -138,9 +145,14 @@
   }
 }
 
+@media all and (min-width: 1024px) {
+    .app__navbar {
+    padding: 0 6rem;
+  }
+}
+
 @media all and (min-width: 1366px) {
   .app__navbar {
-    padding: 0 6rem;
     .hamburger {
       display: none;
     }
@@ -184,23 +196,12 @@
           width: 100%;
         }
       }
-      .app__navbar-icons {
-        display: flex;
-        justify-content: center;
-        width: 120px;
-        height: 40px;
-        border-radius: 0.8rem;
-        background-image: linear-gradient(135deg, #0f8a70 0%, #3b5d50 100%);
-
-        cursor: pointer;
-        .app__navbar-icons-fb {
-          align-self: center;
-          width: 90px;
-          height: 89px;
-        }
-        &:hover {
-          background-color: #0f8a70;
-          background-image: linear-gradient(315deg, #0f8a70 0%, #3b5d50 100%);
+      .app__navbar-links-socials {
+       display: flex;
+       gap: 1.5rem;
+       .app__react-icons{
+         color: $--clr-green;
+         font-size: 2.2rem;
         }
       }
     }

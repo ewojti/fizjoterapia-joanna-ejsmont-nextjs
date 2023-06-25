@@ -5,7 +5,8 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  scroll-behavior: smooth;
+  // scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
 }
 
 html,
@@ -13,6 +14,15 @@ body {
   font-family: $--ff-inter;
   background-color: var($--clr-light);
   cursor: default;
+  background-color: #ffffff;
+  opacity: 1;
+  background-image: radial-gradient(
+      #0f8a70 0.9500000000000001px,
+      transparent 0.9500000000000001px
+    ),
+    radial-gradient(#0f8a70 0.9500000000000001px, #ffffff 0.9500000000000001px);
+  background-size: 38px 38px;
+  background-position: 0 0, 19px 19px;
 }
 
 html {
@@ -28,10 +38,7 @@ a {
   text-decoration: none;
 }
 
-.section__padding {
-  padding: 1rem;
-  scroll-margin-top: 90px;
-}
+
 
 .flex__center {
   display: flex;
@@ -321,9 +328,14 @@ a {
   color: $--clr-green;
 }
 
+.section__padding {
+  padding: 1rem;
+  scroll-margin-top: 90px;
+}
+
 @media screen and (min-width: 768px) {
   .section__padding {
-    padding: 2rem 2rem;
+    padding: 2rem;
   }
 }
 
@@ -370,7 +382,6 @@ a {
   animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 0.4s both;
 }
 
-
 .fade-in-sec {
   -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) 2.4s both;
   animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) 2.4s both;
@@ -410,8 +421,7 @@ a {
   animation: fade-in-left 0.5s cubic-bezier(0.19, 1, 0.22, 1) 1.3s both;
 }
 
-@media screen and (min-width: 768px){
-
+@media screen and (min-width: 768px) {
 }
 
 @-webkit-keyframes fade-in-left {
@@ -440,8 +450,8 @@ a {
 }
 
 .fade-in-bottom {
-  -webkit-animation: fade-in-bottom 1s cubic-bezier(0.39, 0.575, 0.565, 1)
-    1.5s both;
+  -webkit-animation: fade-in-bottom 1s cubic-bezier(0.39, 0.575, 0.565, 1) 1.5s
+    both;
   animation: fade-in-bottom 1s cubic-bezier(0.39, 0.575, 0.565, 1) 1.5s both;
 }
 
@@ -471,31 +481,31 @@ a {
 }
 
 .text-focus-in {
-	-webkit-animation: text-focus-in 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: text-focus-in 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: text-focus-in 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 @-webkit-keyframes text-focus-in {
   0% {
     -webkit-filter: blur(12px);
-            filter: blur(12px);
+    filter: blur(12px);
     opacity: 0;
   }
   100% {
     -webkit-filter: blur(0px);
-            filter: blur(0px);
+    filter: blur(0px);
     opacity: 1;
   }
 }
 @keyframes text-focus-in {
   0% {
     -webkit-filter: blur(12px);
-            filter: blur(12px);
+    filter: blur(12px);
     opacity: 0;
   }
   100% {
     -webkit-filter: blur(0px);
-            filter: blur(0px);
+    filter: blur(0px);
     opacity: 1;
   }
 }

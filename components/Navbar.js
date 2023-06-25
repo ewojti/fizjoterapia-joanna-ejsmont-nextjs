@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import images from "@/constants/images";
+import { AiOutlineInstagram, AiOutlineFacebook } from "react-icons/ai";
 
 const Navbar = () => {
   const [isActive, setActive] = useState(false);
@@ -57,20 +58,22 @@ const Navbar = () => {
             <a href="#kontakt">Kontakt</a>
           </li>
         </ul>
-        <Link
-          className="app__navbar-icons"
-          href="https://www.facebook.com/profile.php?id=100064665101610"
-          target="_blank"
-        >
-          <Image
-            className="app__navbar-icons-fb"
-            src={images.facebook}
-            alt="fizjoterapia"
-            sizes="(min-width: 200px) 50vw,
-              33vw"
-            priority
-          />
-        </Link>
+        <div className="app__navbar-links-socials">
+          <Link
+            className="app__react-icons"
+            href="https://www.facebook.com/profile.php?id=100064665101610"
+            target="_blank"
+          >
+            <AiOutlineFacebook />
+          </Link>
+          <Link
+            className="app__react-icons"
+            href="https://www.instagram.com/fizjoterapia_ejsmont/"
+            target="_blank"
+          >
+            <AiOutlineInstagram />
+          </Link>
+        </div>
       </div>
     </nav>
   );

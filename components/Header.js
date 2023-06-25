@@ -41,9 +41,7 @@ const Header = () => {
         </div>
         <div className="app__header-btn fade-in-bottom">
           <a href="tel:+48793183080">
-            <button className="custom__button">
-              Umów wizytę
-            </button>
+            <button className="custom__button">Umów wizytę</button>
           </a>
           <button className="custom__button" onClick={handleOpenModal}>
             Sprawdź cennik
@@ -51,13 +49,14 @@ const Header = () => {
         </div>
         <div className="app__header-number"></div>
       </div>
-      <div className="app__header-img text-focus-in">
+      <div className="app__header-img">
         <Image
           className="app__header-img-desktop"
           src={images.header}
           alt="fizjoterapia rehabilitacja sokółka"
           priority
           sizes="(min-width: 768px) 50vw"
+          placeholder="blur"
         />
         <Image
           className="app__header-img-mobile"
@@ -65,6 +64,7 @@ const Header = () => {
           alt="fizjoterapia rehabilitacja sokółka"
           priority
           sizes="(max-width: 768px) 50vw"
+          placeholder="blur"
         />
       </div>
       <PriceListModal handleCloseModal={handleCloseModal} isOpen={isOpen} />

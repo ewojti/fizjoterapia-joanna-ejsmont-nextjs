@@ -20,10 +20,11 @@ export default function Home({ posts }) {
         <meta
           name="description"
           content="Gabinet fizjoterapi w Sokółce prowadzony przez mgr.Joanna Ejsmont. Fizjoterapia ortopedyczna, neurologiczna, kobiet w trakcie i po ciąży oraz dzieci."
+          key="desc"
         />
         <meta
           name="keywords"
-          content="Fizjoterapia, Rehabilitacja, terapia manualna, fizjoterapia w ciąży, Sokółka, Joanna Ejsmont"
+          content="Fizjoterapia Ejsmont, Rehabilitacja Sokółka, terapia manualna, fizjoterapia w ciąży, Fizjoterapia Sokółka, Fizjoterapia Joanna Ejsmont, Fizjoterapia Osiedle Centrum 21 w Sokółce"
         ></meta>
         <meta
           property="og:image"

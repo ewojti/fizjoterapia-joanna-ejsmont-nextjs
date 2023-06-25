@@ -6,6 +6,7 @@
   align-items: center;
   gap: 2rem;
   .app__aboutme-description {
+    background-color: $--clr-light;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -41,17 +42,19 @@
   }
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 768px) {
   .app__aboutme {
     flex-direction: row;
     justify-content: center;
     gap: 1.8rem;
+    width: 100%;
     .app__aboutme-description {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       padding: 1rem 1rem;
       height: 600px;
+      width: 60%;
       .app__aboutme-description-text {
         h2,
         p {
@@ -63,7 +66,7 @@
       }
     }
     .app__aboutme-img {
-      max-width: 430px;
+      width: 40%;
       height: 600px;
     }
   }
