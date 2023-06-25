@@ -36,7 +36,7 @@ const Header = () => {
             <span className="app__react-icons">
               <HiPhone />
             </span>
-            <h3 className="app__heading-h3">793-183-080</h3>
+            <p className="p__cormorant">793-183-080</p>
           </div>
         </div>
         <div className="app__header-btn fade-in-bottom">
