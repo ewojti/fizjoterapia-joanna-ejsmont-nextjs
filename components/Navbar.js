@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import images from "@/constants/images";
@@ -46,16 +46,16 @@ const Navbar = () => {
       >
         <ul className="p__cormorant" onClick={handleToggle}>
           <li>
-            <a href="#uslugi">Usługi</a>
+            <Link href="#uslugi">Usługi</Link>
           </li>
           <li>
-            <a href="#omnie">O mnie</a>
+            <Link href="#omnie">O mnie</Link>
           </li>
           <li>
-            <a href="#blog">Blog</a>
+            <Link href="#blog">Blog</Link>
           </li>
           <li>
-            <a href="#kontakt">Kontakt</a>
+            <Link href="#kontakt">Kontakt</Link>
           </li>
         </ul>
         <div className="app__navbar-links-socials">
