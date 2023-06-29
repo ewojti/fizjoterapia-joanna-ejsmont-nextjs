@@ -326,6 +326,10 @@ a {
 .app__react-icons {
   font-size: 2rem;
   color: $--clr-green;
+  transition: transform 0.2s ease-in-out;
+  &:hover{
+    transform: scale(1.2);
+  }
 }
 
 .section__padding {

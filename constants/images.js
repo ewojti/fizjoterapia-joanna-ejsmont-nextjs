@@ -1,4 +1,5 @@
 import aboutme from "../public/assets/aboutme.jpg";
+import aboutme1 from "../public/assets/aboutme1.PNG";
 import header from "../public/assets/header.jpg";
 import blog from "../public/assets/blog.jpg";
 import rehabilitation from "../public/assets/rehabilitation.png";
@@ -20,6 +21,7 @@ export default {
   blog,
   cwiczenia,
   aboutme,
+  aboutme1,
   header,
   logo_header,
   logo_footer,
