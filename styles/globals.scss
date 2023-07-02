@@ -257,18 +257,14 @@ a {
   letter-spacing: 0.07em;
   line-height: 28px;
   font-size: 1.05rem;
-  height: 55px;
-  padding: 0.5rem 2rem;
+  height: 70px;
+  padding: 1rem 2rem;
   border-radius: 2rem;
   border: none;
   outline: none;
   cursor: pointer;
-}
-
-@media screen and (min-width: 500px) {
-  .custom__button {
-    width: 220px;
-  }
+  max-width: 320px;
+  width: 100%;
 }
 
 @mixin gradient($color_first, $color_second) {
@@ -324,11 +320,10 @@ a {
 }
 
 .app__react-icons {
-  font-size: 2rem;
   color: $--clr-green;
   transition: transform 0.2s ease-in-out;
   &:hover{
-    transform: scale(1.2);
+    transform: scale(1.2) rotate(15deg);
   }
 }
 

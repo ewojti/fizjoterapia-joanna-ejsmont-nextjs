@@ -23,7 +23,7 @@ const Header = () => {
     <div className="app__header">
       <div className="app__header-text">
         <h1 className="app__heading-h1 fade-in">
-          Twój gabinet fizjoterapii w <span>Sokółce</span>
+          Twój gabinet fizjoterapii w Sokółce
         </h1>
         <div className="app__header-contact">
           <div className="app__header-contact-item fade-in-left">

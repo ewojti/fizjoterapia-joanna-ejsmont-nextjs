@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import images from "@/constants/images";
 import { AiOutlineInstagram, AiOutlineFacebook } from "react-icons/ai";
+import { SiFacebook, SiInstagram } from "react-icons/si";
 
 const Navbar = () => {
   const [isActive, setActive] = useState(false);
@@ -64,14 +65,16 @@ const Navbar = () => {
             href="https://www.facebook.com/profile.php?id=100064665101610"
             target="_blank"
           >
-            <AiOutlineFacebook />
+            <SiFacebook />
+            {/* <AiOutlineFacebook /> */}
           </Link>
           <Link
             className="app__react-icons"
             href="https://www.instagram.com/fizjoterapia_ejsmont/"
             target="_blank"
           >
-            <AiOutlineInstagram />
+            {/* <AiOutlineInstagram /> */}
+            <SiInstagram/> 
           </Link>
         </div>
       </div>
