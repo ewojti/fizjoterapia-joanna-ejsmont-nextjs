@@ -22,7 +22,6 @@ const Abilities = () => {
               <div
                 className="app__abilities--arrow-vertical"
                 data-aos="fade-in"
-                data-aos-duration="1000"
               ></div>
               <div
                 className="app__abiliteis--arrow-circle"

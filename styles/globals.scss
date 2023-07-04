@@ -265,6 +265,9 @@ a {
   cursor: pointer;
   max-width: 320px;
   width: 100%;
+  &:active{
+    transform: scale(0.98);
+  }
 }
 
 @mixin gradient($color_first, $color_second) {
