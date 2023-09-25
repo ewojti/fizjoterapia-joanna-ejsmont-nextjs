@@ -20,10 +20,11 @@
     display: flex;
     margin: 1.5rem 0;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     gap: 4rem;
     align-items: stretch;
     .app__blogRecent-post {
+      align-self: center;
       text-align: justify;
       max-width: 340px;
       width: 100%;
@@ -32,6 +33,9 @@
       display: flex;
       flex-direction: column;
       cursor: default;
+      -webkit-box-shadow: 0px 0px 7px -2px rgba(66, 68, 90, 1);
+      -moz-box-shadow: 0px 0px 7px -2px rgba(66, 68, 90, 1);
+      box-shadow: 0px 0px 7px -2px rgba(66, 68, 90, 1);
       .app__blogRecent-post-head {
         padding: 1rem 1.5rem;
         width: 100%;
@@ -95,14 +99,11 @@
           font-size: $--fs-body;
           cursor: pointer;
           border-bottom: 2px solid $--clr-green;
-          &:hover {
-            border-bottom: 5px solid $--clr-green;
-          }
         }
       }
     }
   }
-  .app__blogRecent-button-link{    
+  .app__blogRecent-button-link {
     align-self: center;
     max-width: 340px;
     width: 100%;
@@ -121,24 +122,9 @@
       margin-top: 1.2rem;
       cursor: pointer;
       font-weight: $--fw-regular;
-      border: none;
+      border: $--clr-green 1px solid;
       border-radius: 2rem;
     }
-  }
-    
-  .app__blogRecent-button,
-  .app__blogRecent-post {
-    -webkit-box-shadow: 2px 2px 2px 2px rgba(159, 159, 159, 1);
-    -moz-box-shadow: 2px 2px 2px 2px rgba(159, 159, 159, 1);
-    box-shadow: 2px 2px 2px 2px rgba(159, 159, 159, 1);
-  }
-  .app__blogRecent-button:hover,
-  .app__blogRecent-post:hover {
-    border: 2px solid $--clr-green;
-    transition-duration: 0.3s;
-    -webkit-box-shadow: 12px 13px 2px -2px rgba(159, 159, 159, 1);
-    -moz-box-shadow: 12px 13px 2px -2px rgba(159, 159, 159, 1);
-    box-shadow: 12px 13px 2px -2px rgba(159, 159, 159, 1);
   }
 }
 

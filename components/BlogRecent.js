@@ -15,10 +15,7 @@ const BlogRecent = ({ posts }) => {
       <div className="app__border-section-grey"></div>
       <div className="app__blogRecent-posts">
         {lastThreePosts.map((post) => (
-          <div
-            className="app__blogRecent-post"
-            key={nanoid()}
-          >
+          <div className="app__blogRecent-post" key={nanoid()}>
             <div className="app__blogRecent-post-head">
               <span className="overlay"></span>
               <div className="app__blogRecent-post-date">
@@ -41,11 +38,7 @@ const BlogRecent = ({ posts }) => {
         ))}
       </div>
       <Link href="/blog" className="app__blogRecent-button-link">
-        <button
-          className="app__blogRecent-button p__cormorant"
-        >
-          Odwiedź blog
-        </button>
+        <button className="custom__button">Odwiedź blog</button>
       </Link>
     </div>
   );

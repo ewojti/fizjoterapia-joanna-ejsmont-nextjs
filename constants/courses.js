@@ -44,6 +44,10 @@ const courses = [
     id: 11,
     title: "2023 - Integracyjna terapia blizn",
   },
+  {
+    id: 12,
+    title: "2023 - Wady postaw u dzieci",
+  },
 ];
 
 export default courses;

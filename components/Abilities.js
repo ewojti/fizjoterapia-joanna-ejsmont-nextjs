@@ -52,17 +52,17 @@ const Abilities = () => {
               className="app__abilities-list-item"
               key={service.id.toString()}
               id={service.id}
-              data-aos="fade-in"
+              data-aos="fade-up"
+              data-aos-easing="ease-in-back"
+              data-aos-duration="400"
             >
               <Image
                 src={service.image}
                 alt="fizjoterapia rehabilitacja sokółka"
                 priority
                 sizes="(min-width: 768px) 30vw"
-                />
-              <div
-                className="app__abilities-list-item-description"
-              >
+              />
+              <div className="app__abilities-list-item-description">
                 <h2 className="app__heading-h2">{service.title}</h2>
                 <div className="app__border-section-green"></div>
                 <ul className="text-focus-in">

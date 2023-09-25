@@ -112,11 +112,11 @@
         }
       }
     }
-    .app__navbar-links-socials{
+    .app__navbar-links-socials {
       display: flex;
       justify-content: center;
       gap: 2rem;
-      .app__react-icons{
+      .app__react-icons {
         color: $--clr-light;
         font-size: 2rem;
       }
@@ -139,6 +139,9 @@
       .app__navbar-logo-link {
         .app__navbar-logo-desktop {
           max-width: 260px;
+          &:hover {
+            transform: scale(1.03);
+          }
         }
       }
     }
@@ -146,7 +149,7 @@
 }
 
 @media all and (min-width: 1024px) {
-    .app__navbar {
+  .app__navbar {
     padding: 0 6rem;
   }
 }
@@ -197,10 +200,10 @@
         }
       }
       .app__navbar-links-socials {
-       display: flex;
-       gap: 1.5rem;
-       .app__react-icons{
-         color: $--clr-green;
+        display: flex;
+        gap: 1.5rem;
+        .app__react-icons {
+          color: $--clr-green;
         }
       }
     }

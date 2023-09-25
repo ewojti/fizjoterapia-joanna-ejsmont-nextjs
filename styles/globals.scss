@@ -16,13 +16,6 @@ body {
   cursor: default;
   background-color: #ffffff;
   opacity: 1;
-  background-image: radial-gradient(
-      #0f8a70 0.9500000000000001px,
-      transparent 0.9500000000000001px
-    ),
-    radial-gradient(#0f8a70 0.9500000000000001px, #ffffff 0.9500000000000001px);
-  background-size: 38px 38px;
-  background-position: 0 0, 19px 19px;
 }
 
 html {
@@ -201,6 +194,13 @@ a {
       align-self: center;
     }
   }
+    .app__aboutme-course{
+        display: flex;
+        gap: 1rem;
+        .app__aboutme-icons{
+          color: $--clr-green;
+        }
+    }
 }
 
 @media screen and (min-width: 480px) {
@@ -263,7 +263,7 @@ a {
   border: none;
   outline: none;
   cursor: pointer;
-  max-width: 320px;
+  max-width: 340px;
   width: 100%;
   &:active{
     transform: scale(0.98);

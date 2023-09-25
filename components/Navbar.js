@@ -28,6 +28,7 @@ const Navbar = () => {
             alt="fizjoterapia joanna Ejsmont"
             sizes="(min-width: 200px) 100vw,
               30vw"
+              title="Home"
             priority
           />
         </Link>
