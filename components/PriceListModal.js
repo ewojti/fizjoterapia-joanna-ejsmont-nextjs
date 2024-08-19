@@ -1,9 +1,9 @@
-import React, {useEffect } from "react";
+import React, { useEffect } from "react";
 import priceData from "../constants/priceData";
 import "aos/dist/aos.css";
 import Aos from "aos";
 
-const PriceListModal = ({isOpen, handleCloseModal}) => {
+const PriceListModal = ({ isOpen, handleCloseModal }) => {
   useEffect(() => {
     Aos.init({});
   }, []);
@@ -18,7 +18,10 @@ const PriceListModal = ({isOpen, handleCloseModal}) => {
             {priceData.map((price) => (
               <div key={price.id.toString()} className="app__priceList-item">
                 <p>{price.name}</p>
-                <span>{price.cost}</span>
+                <div className="app__priceList-item-price">
+                  <span>{price.cost}</span>
+                  <p>- {price.time}</p>
+                </div>
               </div>
             ))}
           </div>

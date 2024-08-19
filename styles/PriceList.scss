@@ -1,15 +1,21 @@
 @import "@/styles/variable.module";
 
 .app__priceList {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
   font-size: $--fs-body;
-
-  p {
-    letter-spacing: 0.4rem;
-  }
-  span {
-    color: $--clr-green;
-    font-weight: bold;
+  text-align: center; 
+  .app__priceList-item-price {
+    display: flex;
+    justify-content: center;
+    p {
+      letter-spacing: 0.4rem;
+    }
+    span {
+      color: $--clr-green;
+      font-weight: bold;
+    }
   }
 }
 @media screen and (min-width: 768px) {
