@@ -2,33 +2,26 @@ const priceData = [
   {
     id: 1,
     name: "Konsultacja fizjoterapeutyczna",
-    cost: "-100 zł",
-    time: "1h - 1,5h",
+    cost: "-120 zł",
+    time: "1h",
   },
   {
     id: 2,
     name: "Kolejna wizyta",
-    cost: "-100 zł",
-    time: "1h",
+    cost: "-120 zł",
+    time: "45-50 min",
   },
   {
     id: 3,
-    name: "Rehabilitacja neurologiczna",
-    cost: "-90 zł",
-    time: "- 45 min",
+    name: "Rehabilitacja domowa",
+    cost: "-140 zł",
+    time: '- 45min'
   },
   {
     id: 4,
-    name: "Rehabilitacja domowa",
-    cost: "-120 zł",
-    time: '- 1h'
-  },
-  {
-    id: 5,
     name: "Taping",
-    cost: "-20 zł",
-    time: '- 10min'
-  },
+    cost: "-30 zł",
+    time: 'do 10 min' },
 ];
 
 export default priceData

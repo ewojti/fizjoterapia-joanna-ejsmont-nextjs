@@ -31,8 +31,6 @@ a {
   text-decoration: none;
 }
 
-
-
 .flex__center {
   display: flex;
   justify-content: center;
@@ -194,13 +192,13 @@ a {
       align-self: center;
     }
   }
-    .app__aboutme-course{
-        display: flex;
-        gap: 1rem;
-        .app__aboutme-icons{
-          color: $--clr-green;
-        }
+  .app__aboutme-course {
+    display: flex;
+    gap: 1rem;
+    .app__aboutme-icons {
+      color: $--clr-green;
     }
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -265,8 +263,37 @@ a {
   cursor: pointer;
   max-width: 340px;
   width: 100%;
-  &:active{
+  &:active {
     transform: scale(0.98);
+  }
+}
+
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #134e5e 0%,
+    #71b280 51%,
+    #134e5e 100%
+  );
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  box-shadow: 0 0 20px #eee;
+    color: $--clr-light;
+  font-family: $--ff-inter;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  line-height: 28px;
+  font-size: 1.05rem;
+  height: 70px;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+    &:active {
+    transform: scale(0.98);
+  }
+  &:hover {
+    background-position: right center; /* change the direction of the change here */
+    text-decoration: none;
   }
 }
 
@@ -325,7 +352,7 @@ a {
 .app__react-icons {
   color: $--clr-green;
   transition: transform 0.2s ease-in-out;
-  &:hover{
+  &:hover {
     transform: scale(1.2) rotate(15deg);
   }
 }
